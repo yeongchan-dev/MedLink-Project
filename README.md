@@ -1,50 +1,136 @@
-# Welcome to your Expo app 👋
+# 🩺 MedLink
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MedLink is an iOS mobile application designed for Korean international students in the United States that helps users identify appropriate over-the-counter (OTC) medications based on symptoms and familiar Korean medicines.
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 App Preview
 
-   ```bash
-   npm install
-   ```
+*(Insert application screenshots here)*
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📖 Background
 
-In the output, you'll find options to open the app in a
+Many Korean international students in the U.S. face challenges when navigating American pharmacies because:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Medication brand names differ significantly from Korean products  
+- Active ingredients are unfamiliar  
+- It is difficult to confidently match Korean medicines to U.S. equivalents  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+MedLink addresses this challenge by providing structured symptom-based recommendations and Korean-to-U.S. medication mapping in a clean, intuitive interface.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠 Tech Stack
 
-```bash
-npm run reset-project
-```
+- TypeScript
+- React Native
+- Expo
+- Expo Router
+- Node.js
+- iOS Simulator (Development Build)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🚀 Key Features
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1️⃣ Symptom-Based Guidance
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Users select their current symptoms and receive:
 
-## Join the community
+- Possible condition categories  
+- Suggested U.S. OTC medications  
+- General safety guidance  
 
-Join our community of developers creating universal apps.
+This helps users quickly narrow down appropriate non-prescription options available in U.S. pharmacies.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+### 2️⃣ Korean Medicine → U.S. Alternative Matching
+
+Users can select familiar Korean medicines and view:
+
+- Active ingredients  
+- Comparable U.S. OTC products  
+- Availability context  
+
+This feature bridges the knowledge gap between Korean and American pharmaceutical markets.
+
+---
+
+### 3️⃣ Safety & When to Seek Care
+
+The app provides:
+
+- Red-flag symptom awareness  
+- Guidance on when to seek urgent care  
+- Clear informational disclaimers  
+
+---
+
+### 4️⃣ Emergency & First Aid Reference
+
+Quick reference guidance for:
+
+- Minor burns  
+- Cuts and injuries  
+- Basic first-aid procedures  
+
+---
+
+### 5️⃣ Drug Interaction Awareness
+
+Educational information about:
+
+- Basic medication combination risks  
+- The importance of checking active ingredients  
+
+---
+
+## 🧠 Development Note
+
+I leveraged Claude as an AI coding assistant to accelerate prototyping and development.
+
+I was responsible for:
+
+- Product concept development  
+- System architecture design  
+- Feature implementation  
+- UI/UX design decisions  
+- Testing and debugging  
+
+Claude was used strictly as a development tool, while overall system logic and product direction were independently designed and validated.
+
+---
+
+## 🔒 Ethical & Safety Considerations
+
+MedLink is designed as an informational tool only.
+
+- The application does **not** provide medical diagnosis or treatment.  
+- Recommendations are general educational suggestions.  
+- Users are explicitly advised to consult licensed healthcare professionals for serious, persistent, or emergency symptoms.  
+- The app avoids definitive medical claims and includes clear safety disclaimers throughout the user experience.  
+
+Healthcare-related software carries ethical responsibility. MedLink prioritizes clarity, transparency, and responsible communication to avoid misleading users.
+
+---
+
+## 🔮 Future Improvements
+
+- Expand medication database coverage  
+- Improve condition inference logic  
+- Add bilingual (Korean/English) toggle  
+- Implement pharmacy locator integration  
+- Enhance medication safety validation  
+- Introduce structured data-driven recommendation logic  
+
+---
+
+## 📌 Disclaimer
+
+This application is intended for educational and informational purposes only.  
+It does **not** provide medical advice, diagnosis, or treatment.
+
+Always consult a licensed healthcare provider for professional medical guidance.
