@@ -1,0 +1,1004 @@
+{
+  "symptoms": [
+    {
+      "id": "sx_high_fever",
+      "label_en": "High fever",
+      "label_ko": "고열",
+      "synonyms_en": ["fever over 103F", "hyperthermia"],
+      "synonyms_ko": ["열이 높아요", "39도 이상 열"],
+      "category": "INFECTIOUS"
+    },
+    {
+      "id": "sx_chills",
+      "label_en": "Chills",
+      "label_ko": "오한",
+      "synonyms_en": ["shivering", "feeling cold"],
+      "synonyms_ko": ["떨림", "춥다"],
+      "category": "INFECTIOUS"
+    },
+    {
+      "id": "sx_cough",
+      "label_en": "Cough",
+      "label_ko": "기침",
+      "synonyms_en": ["persistent cough", "dry cough"],
+      "synonyms_ko": ["마른기침", "기침이 나요"],
+      "category": "RESP"
+    },
+    {
+      "id": "sx_sore_throat",
+      "label_en": "Sore throat",
+      "label_ko": "인후통",
+      "synonyms_en": ["throat pain", "scratchy throat"],
+      "synonyms_ko": ["목이 아파요", "목 따가움"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_runny_nose",
+      "label_en": "Runny nose",
+      "label_ko": "콧물",
+      "synonyms_en": ["rhinorrhea", "nasal discharge"],
+      "synonyms_ko": ["콧물 나요", "콧물이 흐름"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_muscle_aches",
+      "label_en": "Muscle/body aches",
+      "label_ko": "근육통",
+      "synonyms_en": ["myalgia", "body pain"],
+      "synonyms_ko": ["몸살", "온몸이 아파요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_headache",
+      "label_en": "Headache",
+      "label_ko": "두통",
+      "synonyms_en": ["head pain", "cephalgia"],
+      "synonyms_ko": ["머리 아파요", "머리가 띵해요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_fever",
+      "label_en": "Fever",
+      "label_ko": "발열",
+      "synonyms_en": ["temperature", "pyrexia"],
+      "synonyms_ko": ["열나요", "몸이 뜨거워요"],
+      "category": "INFECTIOUS"
+    },
+    {
+      "id": "sx_shortness_breath",
+      "label_en": "Shortness of breath",
+      "label_ko": "호흡곤란",
+      "synonyms_en": ["difficulty breathing", "dyspnea"],
+      "synonyms_ko": ["숨이 차요", "숨쉬기 힘듦"],
+      "category": "RESP"
+    },
+    {
+      "id": "sx_fatigue",
+      "label_en": "Fatigue",
+      "label_ko": "피로감",
+      "synonyms_en": ["tiredness", "exhaustion"],
+      "synonyms_ko": ["피곤해요", "기운이 없어요"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_loss_taste_smell",
+      "label_en": "Loss of taste or smell",
+      "label_ko": "미각후각상실",
+      "synonyms_en": ["anosmia", "ageusia"],
+      "synonyms_ko": ["냄새 안 맡아져요", "맛을 못 느껴요"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_congestion",
+      "label_en": "Nasal congestion",
+      "label_ko": "코막힘",
+      "synonyms_en": ["blocked nose", "stuffy nose"],
+      "synonyms_ko": ["코가 막혀요", "코가 답답해요"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_nausea",
+      "label_en": "Nausea",
+      "label_ko": "메스꺼움",
+      "synonyms_en": ["feeling sick", "queasiness"],
+      "synonyms_ko": ["속이 미식거려요", "토할 것 같아요"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_scratchy_throat",
+      "label_en": "Scratchy throat",
+      "label_ko": "목 따가움",
+      "synonyms_en": ["irritated throat"],
+      "synonyms_ko": ["목이 간질간질해요"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_sneezing",
+      "label_en": "Sneezing",
+      "label_ko": "재채기",
+      "synonyms_en": ["achoo"],
+      "synonyms_ko": ["재채기 나요"],
+      "category": "ALLERGY"
+    },
+    {
+      "id": "sx_coughing",
+      "label_en": "Coughing",
+      "label_ko": "기침",
+      "synonyms_en": ["persistent cough"],
+      "synonyms_ko": ["계속 기침해요"],
+      "category": "RESP"
+    },
+    {
+      "id": "sx_violent_vomiting",
+      "label_en": "Violent vomiting",
+      "label_ko": "심한구토",
+      "synonyms_en": ["projectile vomiting", "severe vomiting"],
+      "synonyms_ko": ["토해요", "계속 토함"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_diarrhea",
+      "label_en": "Diarrhea",
+      "label_ko": "설사",
+      "synonyms_en": ["loose stools", "watery stools"],
+      "synonyms_ko": ["묽은변", "물같은 설사"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_abdominal_cramps",
+      "label_en": "Abdominal cramps",
+      "label_ko": "복부경련",
+      "synonyms_en": ["stomach cramps", "belly pain"],
+      "synonyms_ko": ["배가 아파요", "복통"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_thick_nasal_discharge",
+      "label_en": "Thick, discolored nasal discharge",
+      "label_ko": "진한콧물",
+      "synonyms_en": ["yellow mucus", "green mucus"],
+      "synonyms_ko": ["누런콧물", "진한 콧물"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_facial_pain",
+      "label_en": "Facial pain or pressure",
+      "label_ko": "안면통",
+      "synonyms_en": ["sinus pressure", "face pain"],
+      "synonyms_ko": ["얼굴이 아파요", "코 주변 압박감"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_postnasal_drip",
+      "label_en": "Postnasal drip",
+      "label_ko": "후비루",
+      "synonyms_en": ["mucus in throat"],
+      "synonyms_ko": ["목에 가래 끼는 느낌"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_upper_abdominal_discomfort",
+      "label_en": "Upper abdominal discomfort",
+      "label_ko": "상복부불편감",
+      "synonyms_en": ["stomach discomfort", "epigastric pain"],
+      "synonyms_ko": ["명치 불편함", "윗배 아픔"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_upper_abdominal_pain",
+      "label_en": "Upper abdominal pain",
+      "label_ko": "상복부통증",
+      "synonyms_en": ["epigastric pain", "stomach pain"],
+      "synonyms_ko": ["명치 아픔", "윗배 통증"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_burning_sensation",
+      "label_en": "Burning sensation",
+      "label_ko": "타는듯한느낌",
+      "synonyms_en": ["burning pain"],
+      "synonyms_ko": ["화끈거려요", "타는 듯해요"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_bloating",
+      "label_en": "Bloating",
+      "label_ko": "복부팽만감",
+      "synonyms_en": ["feeling full", "abdominal distension"],
+      "synonyms_ko": ["배가 부른 느낌", "배가 부풀어요"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_burping",
+      "label_en": "Burping",
+      "label_ko": "트림",
+      "synonyms_en": ["belching", "eructation"],
+      "synonyms_ko": ["트림 나요"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_early_fullness",
+      "label_en": "Early fullness during meals",
+      "label_ko": "조기포만감",
+      "synonyms_en": ["getting full quickly"],
+      "synonyms_ko": ["금방 배불러요", "조금만 먹어도 배부름"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_upper_abdominal_burning",
+      "label_en": "Burning pain in upper abdomen",
+      "label_ko": "상복부화끈거림",
+      "synonyms_en": ["gastric burning"],
+      "synonyms_ko": ["명치 화끈거림"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_vomiting",
+      "label_en": "Vomiting",
+      "label_ko": "구토",
+      "synonyms_en": ["throwing up"],
+      "synonyms_ko": ["토해요", "구역질하고 토함"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_feeling_fullness",
+      "label_en": "Feeling of fullness",
+      "label_ko": "포만감",
+      "synonyms_en": ["satiety"],
+      "synonyms_ko": ["배가 부른 느낌"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_indigestion",
+      "label_en": "Indigestion",
+      "label_ko": "소화불량",
+      "synonyms_en": ["dyspepsia"],
+      "synonyms_ko": ["소화가 안돼요", "체함"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_fewer_bowel_movements",
+      "label_en": "Fewer than three bowel movements a week",
+      "label_ko": "변비",
+      "synonyms_en": ["constipation"],
+      "synonyms_ko": ["변이 안 나와요", "대변 횟수 적음"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_hard_stools",
+      "label_en": "Hard/dry/lumpy stools",
+      "label_ko": "딱딱한변",
+      "synonyms_en": ["dry stool", "lumpy stool"],
+      "synonyms_ko": ["변이 딱딱해요", "토끼똥 같은 변"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_straining_pain",
+      "label_en": "Straining, pain",
+      "label_ko": "배변시통증",
+      "synonyms_en": ["painful bowel movement"],
+      "synonyms_ko": ["변볼 때 아파요", "힘주기 힘들어요"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_incomplete_emptying",
+      "label_en": "Feeling of incomplete emptying",
+      "label_ko": "잔변감",
+      "synonyms_en": ["incomplete evacuation"],
+      "synonyms_ko": ["변이 덜 나온 느낌"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_chest_burning",
+      "label_en": "Burning sensation in chest",
+      "label_ko": "가슴화끈거림",
+      "synonyms_en": ["heartburn"],
+      "synonyms_ko": ["속쓰림", "가슴이 화끈거려요"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_food_backwash",
+      "label_en": "Backwash of food or sour liquid",
+      "label_ko": "역류",
+      "synonyms_en": ["acid reflux", "regurgitation"],
+      "synonyms_ko": ["신물 올라옴", "음식이 역류"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_chest_pain",
+      "label_en": "Upper belly or chest pain",
+      "label_ko": "흉통",
+      "synonyms_en": ["chest discomfort"],
+      "synonyms_ko": ["가슴 아파요"],
+      "category": "CARDIAC"
+    },
+    {
+      "id": "sx_trouble_swallowing",
+      "label_en": "Trouble swallowing",
+      "label_ko": "연하곤란",
+      "synonyms_en": ["dysphagia"],
+      "synonyms_ko": ["삼키기 힘들어요"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_lump_throat",
+      "label_en": "Sensation of lump in throat",
+      "label_ko": "이물감",
+      "synonyms_en": ["globus sensation"],
+      "synonyms_ko": ["목에 뭔가 걸린 느낌"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_ongoing_cough",
+      "label_en": "Ongoing cough",
+      "label_ko": "지속적기침",
+      "synonyms_en": ["chronic cough"],
+      "synonyms_ko": ["계속되는 기침"],
+      "category": "RESP"
+    },
+    {
+      "id": "sx_laryngitis",
+      "label_en": "Laryngitis",
+      "label_ko": "후두염",
+      "synonyms_en": ["hoarse voice"],
+      "synonyms_ko": ["목쉼", "쉰 목소리"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_worsening_asthma",
+      "label_en": "New or worsening asthma",
+      "label_ko": "천식악화",
+      "synonyms_en": ["breathing difficulty"],
+      "synonyms_ko": ["숨쉬기 더 힘들어짐"],
+      "category": "RESP"
+    },
+    {
+      "id": "sx_hives",
+      "label_en": "Hives",
+      "label_ko": "두드러기",
+      "synonyms_en": ["urticaria", "welts"],
+      "synonyms_ko": ["피부에 두드러기"],
+      "category": "ALLERGY"
+    },
+    {
+      "id": "sx_itchy_eyes",
+      "label_en": "Itchy eyes",
+      "label_ko": "눈가려움",
+      "synonyms_en": ["eye irritation"],
+      "synonyms_ko": ["눈이 가려워요"],
+      "category": "ALLERGY"
+    },
+    {
+      "id": "sx_anaphylaxis",
+      "label_en": "Life-threatening anaphylaxis",
+      "label_ko": "아나필락시스",
+      "synonyms_en": ["severe allergic reaction"],
+      "synonyms_ko": ["심한 알레르기 반응"],
+      "category": "EMERGENCY"
+    },
+    {
+      "id": "sx_throat_tightening",
+      "label_en": "Throat tightening",
+      "label_ko": "목조임",
+      "synonyms_en": ["throat constriction"],
+      "synonyms_ko": ["목이 조이는 느낌"],
+      "category": "EMERGENCY"
+    },
+    {
+      "id": "sx_wheezing",
+      "label_en": "Wheezing",
+      "label_ko": "천명음",
+      "synonyms_en": ["whistling breathing"],
+      "synonyms_ko": ["쌕쌕거리는 소리"],
+      "category": "RESP"
+    },
+    {
+      "id": "sx_blood_pressure_drop",
+      "label_en": "Rapid blood pressure drop",
+      "label_ko": "혈압저하",
+      "synonyms_en": ["hypotension"],
+      "synonyms_ko": ["혈압이 떨어져요"],
+      "category": "CARDIAC"
+    },
+    {
+      "id": "sx_itchy_rash",
+      "label_en": "Itchy rash",
+      "label_ko": "가려운발진",
+      "synonyms_en": ["skin rash"],
+      "synonyms_ko": ["피부 발진", "가려운 뾰루지"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_red_rash",
+      "label_en": "Red rash",
+      "label_ko": "붉은발진",
+      "synonyms_en": ["erythematous rash"],
+      "synonyms_ko": ["빨간 발진"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_dry_cracked_skin",
+      "label_en": "Dry or cracked skin",
+      "label_ko": "건조피부",
+      "synonyms_en": ["xerosis"],
+      "synonyms_ko": ["피부가 건조해요", "갈라진 피부"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_blisters",
+      "label_en": "Blisters with potential oozing",
+      "label_ko": "수포",
+      "synonyms_en": ["vesicles", "fluid-filled bumps"],
+      "synonyms_ko": ["물집", "진물"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_burning_skin",
+      "label_en": "Burning",
+      "label_ko": "피부화끈거림",
+      "synonyms_en": ["skin burning"],
+      "synonyms_ko": ["피부가 화끈거려요"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_swelling",
+      "label_en": "Swelling",
+      "label_ko": "부종",
+      "synonyms_en": ["edema"],
+      "synonyms_ko": ["부어요", "붓기"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_raised_welts",
+      "label_en": "Raised, red welts",
+      "label_ko": "융기된발진",
+      "synonyms_en": ["wheals"],
+      "synonyms_ko": ["부풀어오른 발진"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_welts_blanch",
+      "label_en": "Welts that blanch when pressed",
+      "label_ko": "압박시창백",
+      "synonyms_en": ["blanching welts"],
+      "synonyms_ko": ["누르면 하얘지는 발진"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_dry_patches",
+      "label_en": "Dry, sensitive patches",
+      "label_ko": "건조부위",
+      "synonyms_en": ["eczematous patches"],
+      "synonyms_ko": ["건조하고 예민한 부위"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_intense_itching",
+      "label_en": "Intense itching",
+      "label_ko": "심한가려움",
+      "synonyms_en": ["severe pruritus"],
+      "synonyms_ko": ["매우 가려워요"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_redness",
+      "label_en": "Redness",
+      "label_ko": "홍반",
+      "synonyms_en": ["erythema"],
+      "synonyms_ko": ["빨갛게 됨"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_flaky_skin",
+      "label_en": "Flaky, scaly skin",
+      "label_ko": "각질",
+      "synonyms_en": ["scaling", "desquamation"],
+      "synonyms_ko": ["각질이 일어나요", "비듬같은 것"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_thick_leathery_skin",
+      "label_en": "Thick, leathery skin",
+      "label_ko": "두꺼워진피부",
+      "synonyms_en": ["lichenification"],
+      "synonyms_ko": ["피부가 두꺼워짐"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_weeping_crusting",
+      "label_en": "Weeping or crusting",
+      "label_ko": "진물딱지",
+      "synonyms_en": ["oozing", "crusts"],
+      "synonyms_ko": ["진물나고 딱지"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_trouble_falling_asleep",
+      "label_en": "Persistent trouble falling asleep",
+      "label_ko": "입면장애",
+      "synonyms_en": ["sleep onset difficulty"],
+      "synonyms_ko": ["잠들기 힘들어요"],
+      "category": "SLEEP"
+    },
+    {
+      "id": "sx_frequent_waking",
+      "label_en": "Waking up frequently during night",
+      "label_ko": "수면유지장애",
+      "synonyms_en": ["sleep maintenance difficulty"],
+      "synonyms_ko": ["밤에 자꾸 깨요"],
+      "category": "SLEEP"
+    },
+    {
+      "id": "sx_early_waking",
+      "label_en": "Waking up too early",
+      "label_ko": "조기각성",
+      "synonyms_en": ["early morning awakening"],
+      "synonyms_ko": ["새벽에 깨요"],
+      "category": "SLEEP"
+    },
+    {
+      "id": "sx_not_refreshed",
+      "label_en": "Not feeling refreshed upon waking",
+      "label_ko": "비회복수면",
+      "synonyms_en": ["unrefreshing sleep"],
+      "synonyms_ko": ["자도 개운하지 않아요"],
+      "category": "SLEEP"
+    },
+    {
+      "id": "sx_throbbing_headache",
+      "label_en": "Moderate-to-severe throbbing head pain",
+      "label_ko": "욱신거리는두통",
+      "synonyms_en": ["pulsating headache"],
+      "synonyms_ko": ["머리가 욱신거려요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_one_sided_headache",
+      "label_en": "Often on one side",
+      "label_ko": "편측두통",
+      "synonyms_en": ["unilateral headache"],
+      "synonyms_ko": ["한쪽 머리 아픔"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_light_sensitivity",
+      "label_en": "Extreme sensitivity to light",
+      "label_ko": "빛민감성",
+      "synonyms_en": ["photophobia"],
+      "synonyms_ko": ["빛이 눈부셔요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_sound_sensitivity",
+      "label_en": "Extreme sensitivity to sound",
+      "label_ko": "소음민감성",
+      "synonyms_en": ["phonophobia"],
+      "synonyms_ko": ["소리가 시끄러워요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_smell_sensitivity",
+      "label_en": "Extreme sensitivity to smell",
+      "label_ko": "후각민감성",
+      "synonyms_en": ["osmophobia"],
+      "synonyms_ko": ["냄새에 예민해요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_thirsty",
+      "label_en": "Feeling more thirsty than usual",
+      "label_ko": "갈증",
+      "synonyms_en": ["polydipsia"],
+      "synonyms_ko": ["목이 많이 말라요"],
+      "category": "METABOLIC"
+    },
+    {
+      "id": "sx_frequent_urination",
+      "label_en": "Urinating often",
+      "label_ko": "빈뇨",
+      "synonyms_en": ["polyuria"],
+      "synonyms_ko": ["소변을 자주 봐요"],
+      "category": "METABOLIC"
+    },
+    {
+      "id": "sx_weight_loss",
+      "label_en": "Losing weight without trying",
+      "label_ko": "체중감소",
+      "synonyms_en": ["unintentional weight loss"],
+      "synonyms_ko": ["살이 빠져요"],
+      "category": "METABOLIC"
+    },
+    {
+      "id": "sx_ketones_urine",
+      "label_en": "Presence of ketones in urine",
+      "label_ko": "케톤뇨",
+      "synonyms_en": ["ketonuria"],
+      "synonyms_ko": ["소변에 케톤"],
+      "category": "METABOLIC"
+    },
+    {
+      "id": "sx_tired_weak",
+      "label_en": "Feeling tired and weak",
+      "label_ko": "피로무력감",
+      "synonyms_en": ["asthenia"],
+      "synonyms_ko": ["기운이 없고 피곤해요"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_irritable",
+      "label_en": "Feeling irritable",
+      "label_ko": "짜증",
+      "synonyms_en": ["mood changes"],
+      "synonyms_ko": ["화가 잘 나요"],
+      "category": "PSYCH"
+    },
+    {
+      "id": "sx_blurry_vision",
+      "label_en": "Having blurry vision",
+      "label_ko": "시야흐림",
+      "synonyms_en": ["visual blur"],
+      "synonyms_ko": ["눈이 흐려 보여요"],
+      "category": "OPHTH"
+    },
+    {
+      "id": "sx_slow_healing",
+      "label_en": "Having slow-healing sores",
+      "label_ko": "상처회복지연",
+      "synonyms_en": ["delayed wound healing"],
+      "synonyms_ko": ["상처가 잘 안 나아요"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_frequent_infections",
+      "label_en": "Getting frequent infections",
+      "label_ko": "감염반복",
+      "synonyms_en": ["recurrent infections"],
+      "synonyms_ko": ["자주 감염돼요"],
+      "category": "INFECTIOUS"
+    },
+    {
+      "id": "sx_nosebleeds",
+      "label_en": "Nosebleeds",
+      "label_ko": "코피",
+      "synonyms_en": ["epistaxis"],
+      "synonyms_ko": ["코에서 피나요"],
+      "category": "ENT"
+    },
+    {
+      "id": "sx_dizziness",
+      "label_en": "Dizziness",
+      "label_ko": "어지러움",
+      "synonyms_en": ["vertigo"],
+      "synonyms_ko": ["현기증"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_vision_changes",
+      "label_en": "Vision changes",
+      "label_ko": "시야변화",
+      "synonyms_en": ["visual disturbance"],
+      "synonyms_ko": ["시야가 이상해요"],
+      "category": "OPHTH"
+    },
+    {
+      "id": "sx_confusion",
+      "label_en": "Confusion",
+      "label_ko": "혼돈",
+      "synonyms_en": ["disorientation"],
+      "synonyms_ko": ["정신이 흐려요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_looking_pale",
+      "label_en": "Looking pale",
+      "label_ko": "창백함",
+      "synonyms_en": ["pallor"],
+      "synonyms_ko": ["얼굴이 하얘요"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_shakiness",
+      "label_en": "Shakiness",
+      "label_ko": "떨림",
+      "synonyms_en": ["tremor"],
+      "synonyms_ko": ["몸이 떨려요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_sweating",
+      "label_en": "Sweating",
+      "label_ko": "발한",
+      "synonyms_en": ["diaphoresis"],
+      "synonyms_ko": ["땀이 나요"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_hunger",
+      "label_en": "Hunger or nausea",
+      "label_ko": "배고픔",
+      "synonyms_en": ["increased appetite"],
+      "synonyms_ko": ["배가 고파요"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_fast_heartbeat",
+      "label_en": "Fast heartbeat",
+      "label_ko": "빈맥",
+      "synonyms_en": ["tachycardia"],
+      "synonyms_ko": ["심장이 빨리 뛰어요"],
+      "category": "CARDIAC"
+    },
+    {
+      "id": "sx_anxiety",
+      "label_en": "Irritability or anxiety",
+      "label_ko": "불안감",
+      "synonyms_en": ["nervousness"],
+      "synonyms_ko": ["불안해요"],
+      "category": "PSYCH"
+    },
+    {
+      "id": "sx_difficulty_concentrating",
+      "label_en": "Difficulty concentrating",
+      "label_ko": "집중장애",
+      "synonyms_en": ["poor concentration"],
+      "synonyms_ko": ["집중이 안 돼요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_lightheadedness",
+      "label_en": "Lightheadedness",
+      "label_ko": "어찔함",
+      "synonyms_en": ["feeling faint"],
+      "synonyms_ko": ["머리가 어질어질해요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_tingling",
+      "label_en": "Tingling or numbness",
+      "label_ko": "저림감",
+      "synonyms_en": ["paresthesia"],
+      "synonyms_ko": ["손발이 저려요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_loss_coordination",
+      "label_en": "Loss of coordination",
+      "label_ko": "협응장애",
+      "synonyms_en": ["ataxia"],
+      "synonyms_ko": ["몸의 균형이 안 맞아요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_slurred_speech",
+      "label_en": "Slurred speech",
+      "label_ko": "발음장애",
+      "synonyms_en": ["dysarthria"],
+      "synonyms_ko": ["말이 어눌해요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_tunnel_vision",
+      "label_en": "Tunnel vision",
+      "label_ko": "터널시야",
+      "synonyms_en": ["peripheral vision loss"],
+      "synonyms_ko": ["시야가 좁아져요"],
+      "category": "OPHTH"
+    },
+    {
+      "id": "sx_nightmares",
+      "label_en": "Nightmares if asleep",
+      "label_ko": "악몽",
+      "synonyms_en": ["bad dreams"],
+      "synonyms_ko": ["무서운 꿈"],
+      "category": "SLEEP"
+    },
+    {
+      "id": "sx_unresponsiveness",
+      "label_en": "Unresponsiveness",
+      "label_ko": "의식잃음",
+      "synonyms_en": ["loss of consciousness"],
+      "synonyms_ko": ["의식을 잃어요"],
+      "category": "EMERGENCY"
+    },
+    {
+      "id": "sx_seizures",
+      "label_en": "Seizures",
+      "label_ko": "경련",
+      "synonyms_en": ["convulsions"],
+      "synonyms_ko": ["발작"],
+      "category": "EMERGENCY"
+    },
+    {
+      "id": "sx_angina",
+      "label_en": "Chest pain (angina)",
+      "label_ko": "협심증",
+      "synonyms_en": ["cardiac chest pain"],
+      "synonyms_ko": ["가슴을 조이는 아픔"],
+      "category": "CARDIAC"
+    },
+    {
+      "id": "sx_leg_pain",
+      "label_en": "Leg pain",
+      "label_ko": "다리통증",
+      "synonyms_en": ["lower limb pain"],
+      "synonyms_ko": ["다리가 아파요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_muscle_weakness",
+      "label_en": "Progressive muscle weakness",
+      "label_ko": "근력약화",
+      "synonyms_en": ["muscle weakness"],
+      "synonyms_ko": ["근육이 약해져요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_muscle_pain",
+      "label_en": "Muscle pain",
+      "label_ko": "근육통",
+      "synonyms_en": ["myalgia"],
+      "synonyms_ko": ["근육이 아파요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_stiffness",
+      "label_en": "Stiffness",
+      "label_ko": "경직감",
+      "synonyms_en": ["rigidity"],
+      "synonyms_ko": ["뻣뻣해요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_back_pain",
+      "label_en": "Back pain",
+      "label_ko": "요통",
+      "synonyms_en": ["lumbar pain"],
+      "synonyms_ko": ["허리 아파요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_shooting_pain",
+      "label_en": "Shooting pains",
+      "label_ko": "찌르는통증",
+      "synonyms_en": ["lancinating pain"],
+      "synonyms_ko": ["찌릿찌릿해요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_radiating_pain",
+      "label_en": "Pain radiating down legs",
+      "label_ko": "방사통",
+      "synonyms_en": ["sciatica"],
+      "synonyms_ko": ["다리로 뻗치는 아픔"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_muscle_spasms",
+      "label_en": "Muscle spasms",
+      "label_ko": "근육경련",
+      "synonyms_en": ["muscle cramps"],
+      "synonyms_ko": ["근육이 경련해요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_decreased_mobility",
+      "label_en": "Decreased mobility",
+      "label_ko": "활동제한",
+      "synonyms_en": ["limited movement"],
+      "synonyms_ko": ["움직이기 힘들어요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_joint_pain",
+      "label_en": "Joint pain",
+      "label_ko": "관절통",
+      "synonyms_en": ["arthralgia"],
+      "synonyms_ko": ["관절이 아파요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_joint_stiffness",
+      "label_en": "Joint stiffness",
+      "label_ko": "관절경직",
+      "synonyms_en": ["joint rigidity"],
+      "synonyms_ko": ["관절이 뻣뻣해요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_joint_swelling",
+      "label_en": "Joint swelling",
+      "label_ko": "관절부종",
+      "synonyms_en": ["joint edema"],
+      "synonyms_ko": ["관절이 부어요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_joint_warmth",
+      "label_en": "Warmth in affected area",
+      "label_ko": "관절열감",
+      "synonyms_en": ["joint heat"],
+      "synonyms_ko": ["관절이 뜨거워요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_reduced_range_motion",
+      "label_en": "Reduced range of motion",
+      "label_ko": "가동범위제한",
+      "synonyms_en": ["limited mobility"],
+      "synonyms_ko": ["움직임이 제한돼요"],
+      "category": "MSK"
+    },
+    {
+      "id": "sx_bloody_diarrhea",
+      "label_en": "Bloody diarrhea",
+      "label_ko": "혈변",
+      "synonyms_en": ["blood in stool"],
+      "synonyms_ko": ["피섞인 설사"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_stomach_cramps",
+      "label_en": "Stomach cramps",
+      "label_ko": "복부경련",
+      "synonyms_en": ["abdominal spasms"],
+      "synonyms_ko": ["배가 쥐어짜는 듯해요"],
+      "category": "GI"
+    },
+    {
+      "id": "sx_sudden_dizziness",
+      "label_en": "Sudden dizziness",
+      "label_ko": "갑작스런어지러움",
+      "synonyms_en": ["acute vertigo"],
+      "synonyms_ko": ["갑자기 어지러워요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_sudden_lightheadedness",
+      "label_en": "Sudden lightheadedness",
+      "label_ko": "갑작스런어찔함",
+      "synonyms_en": ["acute presyncope"],
+      "synonyms_ko": ["갑자기 어찔해요"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_pale_skin",
+      "label_en": "Pale skin",
+      "label_ko": "창백한피부",
+      "synonyms_en": ["pallor"],
+      "synonyms_ko": ["피부가 하얘요"],
+      "category": "DERM"
+    },
+    {
+      "id": "sx_cold_sweat",
+      "label_en": "Cold/clammy sweat",
+      "label_ko": "식은땀",
+      "synonyms_en": ["diaphoresis"],
+      "synonyms_ko": ["끈적한 땀"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_fainting",
+      "label_en": "Fainting",
+      "label_ko": "실신",
+      "synonyms_en": ["syncope"],
+      "synonyms_ko": ["기절"],
+      "category": "NEURO"
+    },
+    {
+      "id": "sx_weakness",
+      "label_en": "Weakness",
+      "label_ko": "허약감",
+      "synonyms_en": ["asthenia"],
+      "synonyms_ko": ["몸에 힘이 빠져요"],
+      "category": "GEN"
+    },
+    {
+      "id": "sx_tunnel_vision_faint",
+      "label_en": "Tunnel vision before fainting",
+      "label_ko": "기절전터널시야",
+      "synonyms_en": ["pre-syncopal tunnel vision"],
+      "synonyms_ko": ["기절하기 전 시야가 좁아짐"],
+      "category": "OPHTH"
+    }
+  ]
+}

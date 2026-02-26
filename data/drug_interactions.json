@@ -1,0 +1,209 @@
+{
+  "drug_interactions": {
+    "dangerous_combinations": [
+      {
+        "id": "antibiotics_dairy",
+        "combination": ["antibiotics", "dairy_products"],
+        "severity": "moderate",
+        "mechanism": "Calcium binds to antibiotics, reducing absorption",
+        "korean_description": "항생제 + 유제품: 칼슘이 약이랑 결합 → 흡수 안됨",
+        "recommendation": "Take antibiotics 2-3 hours apart from dairy products",
+        "affected_antibiotics": ["tetracycline", "ciprofloxacin", "levofloxacin"],
+        "affected_foods": ["milk", "cheese", "yogurt", "calcium supplements"]
+      },
+      {
+        "id": "cold_medicine_alcohol",
+        "combination": ["acetaminophen", "alcohol"],
+        "severity": "high",
+        "mechanism": "Both metabolized by liver, increases hepatotoxicity risk",
+        "korean_description": "감기약 + 술 → 간 독성 증가",
+        "recommendation": "Avoid alcohol completely while taking acetaminophen",
+        "note": "Ibuprofen is OK in terms of liver health, but bad for stomach",
+        "warning": "Can cause severe liver damage or liver failure"
+      },
+      {
+        "id": "ibuprofen_empty_stomach",
+        "combination": ["ibuprofen", "empty_stomach"],
+        "severity": "moderate",
+        "mechanism": "NSAIDs irritate gastric mucosa",
+        "korean_description": "이부프로펜 + 공복 → 위 점막을 자극하여 속쓰림, 위장 장애, 심하면 위장 출혈을 유발",
+        "recommendation": "Always take ibuprofen with food or milk",
+        "symptoms": ["stomach upset", "heartburn", "gastric bleeding"],
+        "prevention": "Take with food, milk, or after meals"
+      },
+      {
+        "id": "blood_pressure_grapefruit",
+        "combination": ["blood_pressure_medications", "grapefruit"],
+        "severity": "high",
+        "mechanism": "Grapefruit inhibits liver enzymes, increasing drug concentration",
+        "korean_description": "혈압약 + 자몽 → 자몽이 간 효소 억제 → 약 분해 안됨, 혈중 농도 상승, 부작용 위험 증가",
+        "recommendation": "Avoid grapefruit and grapefruit juice completely",
+        "affected_medications": ["amlodipine", "felodipine", "nifedipine", "verapamil"],
+        "consequences": ["dangerous blood pressure drop", "increased side effects"]
+      },
+      {
+        "id": "iron_caffeine_tannins",
+        "combination": ["iron_supplements", "caffeine_tannins"],
+        "severity": "moderate",
+        "mechanism": "Tannins and caffeine bind iron, reducing absorption",
+        "korean_description": "철분 + 카페인/탄닌 (커피, 녹차, 와인) → 흡수 방해",
+        "recommendation": "Take iron supplements 2 hours apart from coffee, tea, wine",
+        "beneficial_combination": "Iron + Vitamin C → increases absorption",
+        "beneficial_korean": "비타민 C랑 섭취하면 흡수 증가 → 좋음!",
+        "affected_beverages": ["coffee", "tea", "wine", "chocolate"]
+      },
+      {
+        "id": "warfarin_vitamin_k",
+        "combination": ["warfarin", "vitamin_k_foods"],
+        "severity": "high",
+        "mechanism": "Vitamin K antagonizes warfarin's anticoagulant effect",
+        "korean_description": "항응고제(와파린) + 비타민K 많은 음식(시금치, 케일) → 약효 감소, 혈전 위험",
+        "recommendation": "Maintain consistent vitamin K intake, don't avoid completely",
+        "high_vitamin_k_foods": ["spinach", "kale", "broccoli", "brussels_sprouts", "lettuce"],
+        "consequence": "Increased risk of blood clots"
+      },
+      {
+        "id": "antacids_other_medications",
+        "combination": ["antacids", "other_medications"],
+        "severity": "moderate",
+        "mechanism": "Antacids alter stomach pH, affecting drug absorption",
+        "korean_description": "위장약 + 다른 약 → 흡수 방해",
+        "recommendation": "Take antacids 2-4 hours apart from other medications",
+        "affected_drugs": ["antibiotics", "iron", "digoxin", "levothyroxine"]
+      },
+      {
+        "id": "sleep_aids_cold_medicine",
+        "combination": ["sleep_medications", "cold_medicine"],
+        "severity": "high",
+        "mechanism": "Additive sedative effects",
+        "korean_description": "수면제 + 감기약 → 과다 졸림",
+        "recommendation": "Avoid combining or consult pharmacist",
+        "warning": "Can cause dangerous oversedation, respiratory depression",
+        "affected_ingredients": ["diphenhydramine", "dextromethorphan", "zolpidem"]
+      },
+      {
+        "id": "antidepressants_st_johns_wort",
+        "combination": ["antidepressants", "st_johns_wort"],
+        "severity": "very_high",
+        "mechanism": "Serotonin syndrome risk",
+        "korean_description": "항우울제 + 세인트존스워트 → 심박수 증가, 세로토닌 과다, 심하면 발작",
+        "recommendation": "Never combine - consult doctor immediately",
+        "symptoms": ["rapid heart rate", "high fever", "seizures", "confusion"],
+        "emergency": "Serotonin syndrome is life-threatening"
+      },
+      {
+        "id": "birth_control_smoking",
+        "combination": ["birth_control_pills", "cigarettes"],
+        "severity": "high",
+        "mechanism": "Increased thrombotic risk",
+        "korean_description": "피임약 + 담배 → 혈전 위험 증가",
+        "recommendation": "Quit smoking or use alternative contraception",
+        "risk_factors": ["age over 35", "heavy smoking"],
+        "consequences": ["stroke", "heart attack", "pulmonary embolism"]
+      }
+    ],
+    "beneficial_combinations": [
+      {
+        "id": "iron_vitamin_c",
+        "combination": ["iron", "vitamin_c"],
+        "benefit": "Vitamin C increases iron absorption",
+        "korean_description": "철분 + 비타민 C → 흡수 증가",
+        "recommendation": "Take iron supplements with orange juice or vitamin C",
+        "mechanism": "Vitamin C reduces iron to more absorbable form"
+      },
+      {
+        "id": "vitamin_d_fatty_foods",
+        "combination": ["vitamin_d", "fatty_foods"],
+        "benefit": "Fat increases vitamin D absorption",
+        "korean_description": "비타민 D + 지방이 있는 음식 → 흡수 증가",
+        "recommendation": "Take vitamin D supplements with meals containing fat",
+        "good_foods": ["avocado", "nuts", "olive oil", "fish"]
+      },
+      {
+        "id": "magnesium_sleep",
+        "combination": ["magnesium", "bedtime"],
+        "benefit": "Magnesium promotes relaxation and sleep",
+        "korean_description": "마그네슘 → 수면에 도움",
+        "recommendation": "Take magnesium supplement 30-60 minutes before bed",
+        "mechanism": "Magnesium activates GABA receptors"
+      },
+      {
+        "id": "probiotics_antibiotics",
+        "combination": ["probiotics", "antibiotics"],
+        "benefit": "Probiotics help restore gut bacteria",
+        "korean_description": "프로바이오틱스 + 항생제 → 장 보호",
+        "recommendation": "Take probiotics 2-3 hours after antibiotics",
+        "timing": "Continue probiotics for 2 weeks after antibiotic course"
+      }
+    ],
+    "supplement_interactions": [
+      {
+        "id": "iron_calcium",
+        "combination": ["iron", "calcium"],
+        "interaction": "competitive_absorption",
+        "effect": "Both supplements compete for absorption",
+        "korean_description": "철분 + 칼슘 → 철분은 공복에 좋음",
+        "recommendation": "Take iron on empty stomach, calcium with meals",
+        "timing": "Separate by 2+ hours"
+      },
+      {
+        "id": "zinc_iron",
+        "combination": ["zinc", "iron"],
+        "interaction": "competitive_absorption",
+        "effect": "Share same absorption pathway",
+        "korean_description": "아연 + 철분 → 흡수 통로가 비슷해서 둘 다 흡수율 감소",
+        "recommendation": "Take at different times of day",
+        "timing": "Separate by 2+ hours"
+      },
+      {
+        "id": "magnesium_calcium",
+        "combination": ["magnesium", "calcium"],
+        "interaction": "competitive_absorption",
+        "effect": "Compete for same absorption pathway",
+        "korean_description": "마그네슘 + 칼슘 → 흡수 통로가 비슷해서 둘 다 흡수율 감소",
+        "recommendation": "Take separately or in 2:1 ratio (Ca:Mg)",
+        "optimal_ratio": "2:1 calcium to magnesium if taken together"
+      },
+      {
+        "id": "omega3_vitamin_e",
+        "combination": ["omega3", "vitamin_e"],
+        "interaction": "increased_bleeding_risk",
+        "effect": "Both inhibit blood clotting",
+        "korean_description": "오메가3 + 비타민 E → 혈액 응고 억제 → 멍이 잘 들거나 출혈 위험 증가",
+        "recommendation": "Monitor for easy bruising, consult doctor if on blood thinners",
+        "warning": "Especially important if taking warfarin or aspirin"
+      }
+    ],
+    "food_interactions": [
+      {
+        "id": "leafy_greens_blood_thinners",
+        "food": "leafy_greens",
+        "medication": "blood_thinners",
+        "effect": "Vitamin K reduces anticoagulant effect",
+        "recommendation": "Maintain consistent intake, don't avoid completely"
+      },
+      {
+        "id": "grapefruit_many_drugs",
+        "food": "grapefruit",
+        "medication": "various",
+        "effect": "Inhibits CYP3A4 enzyme, increases drug levels",
+        "affected_drugs": ["statins", "calcium_channel_blockers", "immunosuppressants"],
+        "recommendation": "Avoid grapefruit completely with these medications"
+      },
+      {
+        "id": "dairy_antibiotics",
+        "food": "dairy",
+        "medication": "tetracycline_antibiotics",
+        "effect": "Calcium chelates antibiotics",
+        "recommendation": "Take antibiotics 2 hours before or 6 hours after dairy"
+      }
+    ],
+    "timing_guidelines": {
+      "with_food": ["ibuprofen", "naproxen", "aspirin", "prednisone"],
+      "empty_stomach": ["iron", "levothyroxine", "omeprazole", "lansoprazole"],
+      "bedtime": ["melatonin", "magnesium", "statins"],
+      "morning": ["levothyroxine", "vitamin_d", "b_vitamins"],
+      "separate_from_calcium": ["iron", "levothyroxine", "tetracycline"]
+    }
+  }
+}

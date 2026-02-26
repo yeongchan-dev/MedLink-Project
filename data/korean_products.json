@@ -1,0 +1,660 @@
+{
+  "korean_products": [
+    {
+      "id": "kr_gas_hwalmyungsoo",
+      "name_ko": "까스활명수",
+      "name_en": "Gas Hwalmyungsoo",
+      "category": "digestive",
+      "active_ingredients": ["herbal digestive enzymes", "licorice", "angelica", "ginger", "citrus"],
+      "us_status": {
+        "availability": "no_exact_equivalent",
+        "note": "No exact herbal formula brand in the U.S."
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["simethicone"],
+          "brands": ["Gas-X", "Mylanta Gas Minis"],
+          "rx_required": false,
+          "price_range": "$5-10",
+          "similarity": "medium"
+        },
+        {
+          "active_ingredients": ["digestive enzymes"],
+          "brands": ["Beano", "Lactaid"],
+          "rx_required": false,
+          "price_range": "$8-15",
+          "similarity": "low"
+        },
+        {
+          "active_ingredients": ["aluminum hydroxide", "magnesium hydroxide"],
+          "brands": ["Pepto Bismol", "Mylanta"],
+          "rx_required": false,
+          "price_range": "$4-8",
+          "similarity": "medium"
+        }
+      ],
+      "cautions": ["Check individual ingredient allergies"]
+    },
+    {
+      "id": "kr_ibuprofen",
+      "name_ko": "소염진통제 (이부프로펜)",
+      "name_en": "Anti-inflammatory / Pain relievers",
+      "category": "pain_relief",
+      "active_ingredients": ["ibuprofen"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Same active ingredient available OTC"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["ibuprofen"],
+          "brands": ["Advil", "Motrin"],
+          "rx_required": false,
+          "price_range": "$3-12",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["naproxen"],
+          "brands": ["Aleve"],
+          "rx_required": false,
+          "price_range": "$5-15",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Take with food", "May cause stomach upset", "Avoid if allergic to NSAIDs"]
+    },
+    {
+      "id": "kr_muscle_relaxant",
+      "name_ko": "근이완제",
+      "name_en": "Muscle Relaxants",
+      "category": "muscle_relief",
+      "active_ingredients": ["various muscle relaxants"],
+      "us_status": {
+        "availability": "prescription_required",
+        "note": "Most muscle relaxants require prescription in US"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["methocarbamol"],
+          "brands": ["Robaxin"],
+          "rx_required": true,
+          "price_range": "$20-40",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["cyclobenzaprine"],
+          "brands": ["Flexeril"],
+          "rx_required": true,
+          "price_range": "$15-30",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["tizanidine"],
+          "brands": ["Zanaflex"],
+          "rx_required": true,
+          "price_range": "$25-50",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Prescription required", "May cause drowsiness"]
+    },
+    {
+      "id": "kr_madecassol",
+      "name_ko": "마데카솔",
+      "name_en": "Madecassol",
+      "category": "wound_care",
+      "active_ingredients": ["centella asiatica"],
+      "us_status": {
+        "availability": "alternatives_available",
+        "note": "Centella asiatica-based wound healing"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["centella asiatica"],
+          "brands": ["Cicaplast Baume B5", "PurCellin Oil"],
+          "rx_required": false,
+          "price_range": "$15-30",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["bacitracin", "neomycin", "polymyxin B"],
+          "brands": ["Neosporin", "Polysporin"],
+          "rx_required": false,
+          "price_range": "$5-12",
+          "similarity": "medium"
+        }
+      ],
+      "cautions": ["For external use only", "Discontinue if rash develops"]
+    },
+    {
+      "id": "kr_fucidin",
+      "name_ko": "후시딘",
+      "name_en": "Fucidin",
+      "category": "topical_antibiotic",
+      "active_ingredients": ["fusidic acid"],
+      "us_status": {
+        "availability": "not_approved_us",
+        "note": "Fusidic acid is not FDA-approved/marketed in the US"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["bacitracin"],
+          "brands": ["Bacitracin Ointment"],
+          "rx_required": false,
+          "price_range": "$3-8",
+          "similarity": "medium"
+        },
+        {
+          "active_ingredients": ["triple antibiotic"],
+          "brands": ["Neosporin"],
+          "rx_required": false,
+          "price_range": "$5-12",
+          "similarity": "medium"
+        }
+      ],
+      "cautions": ["Contact dermatitis possible", "If worsening → urgent care"]
+    },
+    {
+      "id": "kr_albocyl",
+      "name_ko": "알보칠",
+      "name_en": "Albocyl",
+      "category": "oral_antiseptic",
+      "active_ingredients": ["antiseptic for oral/gum issues"],
+      "us_status": {
+        "availability": "alternatives_available",
+        "note": "Oral antiseptic alternatives available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["chlorhexidine gluconate"],
+          "brands": ["Chlorhexidine rinse"],
+          "rx_required": true,
+          "price_range": "$10-25",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["hydrogen peroxide"],
+          "brands": ["Peroxyl"],
+          "rx_required": false,
+          "price_range": "$4-10",
+          "similarity": "medium"
+        }
+      ],
+      "cautions": ["For oral use only", "Follow dilution instructions"]
+    },
+    {
+      "id": "kr_oramedi",
+      "name_ko": "오라메디",
+      "name_en": "Oramedi",
+      "category": "oral_throat_spray",
+      "active_ingredients": ["oral antiseptic/throat spray"],
+      "us_status": {
+        "availability": "alternatives_available",
+        "note": "Similar throat sprays available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["benzocaine"],
+          "brands": ["Chloraseptic spray"],
+          "rx_required": false,
+          "price_range": "$5-12",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["menthol"],
+          "brands": ["Cepacol spray/lozenges"],
+          "rx_required": false,
+          "price_range": "$4-10",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Temporary numbing effect", "Do not exceed recommended dose"]
+    },
+    {
+      "id": "kr_yonggaksan",
+      "name_ko": "용각산",
+      "name_en": "Yonggaksan",
+      "category": "antacid_digestive",
+      "active_ingredients": ["Korean antacid and digestive aid"],
+      "us_status": {
+        "availability": "equivalents_available",
+        "note": "US antacids provide similar relief"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["calcium carbonate"],
+          "brands": ["Tums", "Rolaids"],
+          "rx_required": false,
+          "price_range": "$3-8",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["famotidine"],
+          "brands": ["Pepcid AC"],
+          "rx_required": false,
+          "price_range": "$8-18",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["ranitidine alternative"],
+          "brands": ["Zantac 360mg (famotidine)"],
+          "rx_required": false,
+          "price_range": "$10-20",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Do not exceed daily dose", "Consult doctor if symptoms persist"]
+    },
+    {
+      "id": "kr_motion_sickness",
+      "name_ko": "멀미약",
+      "name_en": "Motion sickness medication",
+      "category": "motion_sickness",
+      "active_ingredients": ["motion sickness prevention"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Multiple OTC options available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["dimenhydrinate"],
+          "brands": ["Dramamine"],
+          "rx_required": false,
+          "price_range": "$5-15",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["meclizine"],
+          "brands": ["Bonine"],
+          "rx_required": false,
+          "price_range": "$6-18",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["acupressure"],
+          "brands": ["Sea-bands"],
+          "rx_required": false,
+          "price_range": "$8-20",
+          "similarity": "low"
+        }
+      ],
+      "cautions": ["May cause drowsiness", "Take before travel"]
+    },
+    {
+      "id": "kr_taksen",
+      "name_ko": "탁센",
+      "name_en": "Taksen (Naproxen)",
+      "category": "pain_relief",
+      "active_ingredients": ["naproxen"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Same active ingredient available OTC"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["naproxen"],
+          "brands": ["Aleve"],
+          "rx_required": false,
+          "price_range": "$6-18",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Take with food", "Longer lasting than ibuprofen"]
+    },
+    {
+      "id": "kr_gelpos",
+      "name_ko": "겔포스",
+      "name_en": "Gelpos (CaCO3 + MgOH)",
+      "category": "antacid",
+      "active_ingredients": ["calcium carbonate", "magnesium hydroxide"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Same ingredients available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["calcium carbonate", "magnesium hydroxide"],
+          "brands": ["Tums", "Maalox"],
+          "rx_required": false,
+          "price_range": "$3-12",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Do not exceed daily dose"]
+    },
+    {
+      "id": "kr_beomuly",
+      "name_ko": "버물리",
+      "name_en": "Beomuly (Topical analgesic rub)",
+      "category": "topical_pain_relief",
+      "active_ingredients": ["menthol", "camphor"],
+      "us_status": {
+        "availability": "equivalents_available",
+        "note": "Similar topical analgesics available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["menthol", "camphor"],
+          "brands": ["Biofreeze", "Icy Hot", "Bengay", "Tiger Balm"],
+          "rx_required": false,
+          "price_range": "$5-20",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["For external use only", "Avoid eyes and mucous membranes"]
+    },
+    {
+      "id": "kr_period_pain",
+      "name_ko": "생리통약",
+      "name_en": "Period pain medication",
+      "category": "menstrual_pain",
+      "active_ingredients": ["ibuprofen", "acetaminophen", "pamabrom"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Multiple options specifically for menstrual pain"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["ibuprofen"],
+          "brands": ["Advil", "Motrin"],
+          "rx_required": false,
+          "price_range": "$4-12",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["acetaminophen"],
+          "brands": ["Tylenol"],
+          "rx_required": false,
+          "price_range": "$3-10",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["acetaminophen", "pamabrom", "pyrilamine"],
+          "brands": ["Midol"],
+          "rx_required": false,
+          "price_range": "$6-15",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["naproxen"],
+          "brands": ["Aleve"],
+          "rx_required": false,
+          "price_range": "$6-18",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Follow dosing instructions", "Take with food for NSAIDs"]
+    },
+    {
+      "id": "kr_cold_flu_combo",
+      "name_ko": "종합감기약",
+      "name_en": "Comprehensive cold/flu medication",
+      "category": "cold_flu",
+      "active_ingredients": ["acetaminophen", "dextromethorphan", "phenylephrine"],
+      "us_status": {
+        "availability": "segmented_approach",
+        "note": "US uses symptom-specific rather than combination"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["acetaminophen", "dextromethorphan", "phenylephrine"],
+          "brands": ["DayQuil", "NyQuil"],
+          "rx_required": false,
+          "price_range": "$8-18",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["multiple"],
+          "brands": ["Alka-Seltzer Plus"],
+          "rx_required": false,
+          "price_range": "$6-15",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["guaifenesin", "dextromethorphan"],
+          "brands": ["Mucinex Fast Max Cold & Flu"],
+          "rx_required": false,
+          "price_range": "$10-20",
+          "similarity": "medium"
+        },
+        {
+          "active_ingredients": ["dextromethorphan"],
+          "brands": ["Delsym", "Robitussin"],
+          "rx_required": false,
+          "price_range": "$6-18",
+          "similarity": "medium"
+        }
+      ],
+      "cautions": ["Check for drug interactions", "Do not exceed acetaminophen daily limit"]
+    },
+    {
+      "id": "kr_artificial_tears",
+      "name_ko": "인공눈물",
+      "name_en": "Artificial tears (preservative-free)",
+      "category": "eye_care",
+      "active_ingredients": ["polyethylene glycol", "propylene glycol"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Many preservative-free options available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["polyethylene glycol"],
+          "brands": ["Refresh Optive Sensitive", "Refresh Mega-3"],
+          "rx_required": false,
+          "price_range": "$8-25",
+          "similarity": "high",
+          "notes": "Preservative-free, excellent for contact lens wearers"
+        },
+        {
+          "active_ingredients": ["polyethylene glycol"],
+          "brands": ["Systane Hydration PF"],
+          "rx_required": false,
+          "price_range": "$10-28",
+          "similarity": "high",
+          "notes": "High moisture, recommended for contact lens wearers"
+        },
+        {
+          "active_ingredients": ["glycerin"],
+          "brands": ["Blink Contacts Lubricating Eye Drops"],
+          "rx_required": false,
+          "price_range": "$6-18",
+          "similarity": "high",
+          "notes": "Specifically designed for use with contact lenses"
+        }
+      ],
+      "redness_relief": [
+        {
+          "active_ingredients": ["brimonidine"],
+          "brands": ["Lumify"],
+          "price_range": "$12-25"
+        },
+        {
+          "active_ingredients": ["tetrahydrozoline"],
+          "brands": ["Visine", "Clear Eyes"],
+          "price_range": "$3-10"
+        }
+      ],
+      "cautions": ["Preservative-free recommended for frequent use", "Do not use redness relief drops with contact lenses"]
+    },
+    {
+      "id": "kr_pain_patches",
+      "name_ko": "파스",
+      "name_en": "Pain patches",
+      "category": "topical_pain_relief",
+      "active_ingredients": ["menthol", "methyl salicylate", "capsaicin"],
+      "us_status": {
+        "availability": "equivalents_available",
+        "note": "Similar pain relief patches available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["menthol", "methyl salicylate"],
+          "brands": ["Salonpas"],
+          "rx_required": false,
+          "price_range": "$8-20",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["menthol"],
+          "brands": ["Icy Hot patch"],
+          "rx_required": false,
+          "price_range": "$6-15",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["diclofenac"],
+          "brands": ["Voltaren Arthritis Pain Gel/Patch"],
+          "rx_required": false,
+          "price_range": "$12-25",
+          "similarity": "medium"
+        }
+      ],
+      "cautions": ["For external use only", "Do not use on broken skin"]
+    },
+    {
+      "id": "kr_brufen",
+      "name_ko": "부루펜",
+      "name_en": "Brufen (Ibuprofen)",
+      "category": "pain_relief",
+      "active_ingredients": ["ibuprofen"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Same active ingredient widely available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["ibuprofen"],
+          "brands": ["Advil", "Motrin"],
+          "rx_required": false,
+          "price_range": "$3-12",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Take with food", "Do not exceed daily dose"]
+    },
+    {
+      "id": "kr_gebolin",
+      "name_ko": "게보린",
+      "name_en": "Gebolin (Cold/flu medication)",
+      "category": "cold_flu",
+      "active_ingredients": ["acetaminophen", "aspirin", "caffeine"],
+      "us_status": {
+        "availability": "similar_combinations",
+        "note": "Similar combination available"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["acetaminophen", "aspirin", "caffeine"],
+          "brands": ["Excedrin"],
+          "rx_required": false,
+          "price_range": "$6-18",
+          "similarity": "high",
+          "notes": "Most similar composition to Gebolin"
+        },
+        {
+          "active_ingredients": ["acetaminophen"],
+          "brands": ["Tylenol Extra Strength"],
+          "rx_required": false,
+          "price_range": "$4-12",
+          "similarity": "medium",
+          "notes": "Single ingredient for headache and fever"
+        },
+        {
+          "active_ingredients": ["ibuprofen"],
+          "brands": ["Advil"],
+          "rx_required": false,
+          "price_range": "$4-12",
+          "similarity": "medium",
+          "notes": "Strong anti-inflammatory action"
+        },
+        {
+          "active_ingredients": ["naproxen"],
+          "brands": ["Aleve"],
+          "rx_required": false,
+          "price_range": "$6-18",
+          "similarity": "medium",
+          "notes": "Longer-lasting effect"
+        }
+      ],
+      "cautions": ["Contains caffeine", "Do not exceed acetaminophen daily limit"]
+    },
+    {
+      "id": "kr_zyrtec",
+      "name_ko": "지르텍",
+      "name_en": "Zyrtec (Korean version)",
+      "category": "allergy",
+      "active_ingredients": ["cetirizine"],
+      "us_status": {
+        "availability": "identical_available",
+        "note": "Identical medication available OTC"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["cetirizine"],
+          "brands": ["Zyrtec (US version)"],
+          "rx_required": false,
+          "price_range": "$8-25",
+          "similarity": "identical"
+        }
+      ],
+      "cautions": ["May cause drowsiness", "Do not exceed one tablet per day"]
+    },
+    {
+      "id": "kr_red_medicine",
+      "name_ko": "빨간약",
+      "name_en": "Red medicine (Povidone-iodine)",
+      "category": "antiseptic",
+      "active_ingredients": ["povidone-iodine"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Available OTC in various forms"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["povidone-iodine"],
+          "brands": ["Betadine"],
+          "rx_required": false,
+          "price_range": "$4-12",
+          "similarity": "identical"
+        }
+      ],
+      "cautions": ["For external use only", "May stain clothing"]
+    },
+    {
+      "id": "kr_mediform_duoderm",
+      "name_ko": "메디폼/듀오덤",
+      "name_en": "Mediform/DuoDerm (Hydrocolloid dressing)",
+      "category": "wound_dressing",
+      "active_ingredients": ["hydrocolloid", "foam"],
+      "us_status": {
+        "availability": "widely_available",
+        "note": "Available OTC and prescription"
+      },
+      "us_alternatives": [
+        {
+          "active_ingredients": ["hydrocolloid"],
+          "brands": ["Band-Aid Hydrocolloid Blister Pads"],
+          "rx_required": false,
+          "price_range": "$6-15",
+          "similarity": "high"
+        },
+        {
+          "active_ingredients": ["hydrocolloid"],
+          "brands": ["DuoDERM (also available OTC)"],
+          "rx_required": false,
+          "price_range": "$10-25",
+          "similarity": "identical"
+        },
+        {
+          "active_ingredients": ["hydrocolloid"],
+          "brands": ["Compeed Blister Cushions"],
+          "rx_required": false,
+          "price_range": "$8-20",
+          "similarity": "high"
+        }
+      ],
+      "cautions": ["Change when saturated", "Monitor for signs of infection"]
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "emergency_guide": {
+    "burns": {
+      "first_degree": {
+        "description": "Superficial, red, no blisters",
+        "characteristics": ["red skin", "painful", "dry", "no blisters"],
+        "treatment": [
+          "Cool the burn with running water for 10-20 minutes",
+          "Apply aloe vera gel or moisturizer",
+          "Take over-the-counter pain relief (acetaminophen or ibuprofen)",
+          "Keep the area clean and dry",
+          "Avoid ice, butter, or home remedies"
+        ],
+        "healing_time": "3-6 days",
+        "when_to_seek_help": "If pain increases or signs of infection develop"
+      },
+      "second_degree": {
+        "description": "Partial-thickness, blisters, red/white, painful",
+        "characteristics": ["blisters", "red and white skin", "very painful", "swelling"],
+        "treatment": [
+          "Cool with running water for 10-20 minutes",
+          "Gently clean with mild soap and water",
+          "Do NOT pop blisters",
+          "Apply antibiotic ointment if blisters break",
+          "Cover with sterile gauze or bandage",
+          "Take pain medication as needed",
+          "Change dressing daily"
+        ],
+        "what_not_to_do": ["Don't pop blisters", "Don't use ice", "Don't apply butter or oils"],
+        "healing_time": "2-3 weeks",
+        "when_to_seek_help": "Always seek medical attention for second-degree burns"
+      },
+      "third_degree": {
+        "description": "Full-thickness, charred/white, numb",
+        "characteristics": ["white or charred skin", "numb (nerve damage)", "leathery texture", "may not be painful"],
+        "treatment": "EMERGENCY - Call 911 immediately",
+        "immediate_care": [
+          "Call 911 immediately",
+          "Do not remove burned clothing stuck to skin",
+          "Do not apply water to large burns",
+          "Cover with clean, dry cloth",
+          "Keep person warm and lying down",
+          "Monitor breathing"
+        ],
+        "what_not_to_do": ["Don't use water on large burns", "Don't remove stuck clothing", "Don't apply ointments"],
+        "requires": "Immediate emergency medical attention"
+      },
+      "when_to_seek_medical_help": [
+        "Burns larger than 3 inches in diameter",
+        "Burns on face, hands, feet, groin, or major joints",
+        "Burns that are deep, charred, or white/leathery",
+        "Difficulty breathing (smoke inhalation)",
+        "Signs of infection: increased pain, swelling, fever, pus",
+        "Burns caused by chemicals or electricity"
+      ]
+    },
+    "cuts_and_wounds": {
+      "first_aid_steps": {
+        "stop_bleeding": {
+          "step": 1,
+          "action": "Stop the bleeding",
+          "instructions": [
+            "Apply firm, direct pressure with clean cloth or bandage",
+            "Maintain pressure for several minutes",
+            "If possible, elevate injured area above heart level",
+            "If blood soaks through, add more cloth on top (don't remove original)"
+          ]
+        },
+        "clean_wound": {
+          "step": 2,
+          "action": "Clean the wound",
+          "instructions": [
+            "Wash your hands thoroughly first",
+            "Rinse cut with clear, running water for several minutes",
+            "Clean around wound with soap (avoid getting soap in wound)",
+            "Pat dry with clean towel"
+          ]
+        },
+        "remove_debris": {
+          "step": 3,
+          "action": "Remove debris",
+          "instructions": [
+            "Use tweezers cleaned with rubbing alcohol",
+            "Gently remove visible dirt or debris",
+            "If debris is deep or large, leave it and seek medical help"
+          ]
+        },
+        "apply_antibiotic": {
+          "step": 4,
+          "action": "Apply antibiotic ointment",
+          "instructions": [
+            "Apply thin layer of antibiotic cream (Neosporin) or petroleum jelly",
+            "This keeps surface moist and prevents infection",
+            "Use sparingly - too much can slow healing"
+          ]
+        },
+        "cover_wound": {
+          "step": 5,
+          "action": "Cover the wound",
+          "instructions": [
+            "Cover with sterile bandage, gauze, or adhesive bandage",
+            "Change bandage daily or when it becomes wet/dirty",
+            "Keep wound clean and protected"
+          ]
+        }
+      },
+      "follow_up_care": {
+        "daily_care": [
+          "Change bandages daily or when wet/dirty",
+          "Keep wound clean and dry",
+          "Monitor for signs of infection",
+          "Take over-the-counter pain relievers if needed"
+        ],
+        "signs_of_infection": [
+          "Increased redness around wound",
+          "Increased pain or tenderness",
+          "Swelling or warmth",
+          "Pus or yellowish drainage",
+          "Red streaks extending from wound",
+          "Fever"
+        ],
+        "signs_of_healing": [
+          "Decreased pain over time",
+          "Edges of wound coming together",
+          "New pink tissue forming",
+          "Scab formation (normal)"
+        ]
+      },
+      "when_to_seek_medical_help": [
+        "Bleeding doesn't stop after 5-10 minutes of direct pressure",
+        "Wound is deep, long, or gaping",
+        "Wound was caused by dirty or rusty object",
+        "Edges of wound are jagged or won't stay closed",
+        "Signs of infection develop",
+        "Wound involves numbness or inability to move body part",
+        "Need tetanus shot (if last one was more than 10 years ago)",
+        "Large pieces of debris in wound",
+        "Animal or human bite"
+      ],
+      "what_not_to_do": [
+        "Don't use hydrogen peroxide or rubbing alcohol directly in wound",
+        "Don't blow on the wound",
+        "Don't remove deeply embedded objects",
+        "Don't ignore signs of infection",
+        "Don't leave wound uncovered if it's in dirty environment"
+      ],
+      "tetanus_information": {
+        "when_needed": "If wound is from rusty or dirty object and last tetanus shot was >10 years ago",
+        "for_dirty_wounds": "May need tetanus shot if last one was >5 years ago",
+        "where_to_get": "Urgent care, primary care, or pharmacy"
+      }
+    },
+    "emergency_contacts": {
+      "immediate_emergency": {
+        "number": "911",
+        "when_to_call": [
+          "Life-threatening emergencies",
+          "Severe bleeding that won't stop",
+          "Difficulty breathing",
+          "Loss of consciousness",
+          "Suspected heart attack or stroke",
+          "Severe burns (third degree)",
+          "Suspected poisoning",
+          "Severe allergic reaction"
+        ]
+      },
+      "poison_control": {
+        "number": "1-800-222-1222",
+        "when_to_call": [
+          "Suspected poisoning",
+          "Medication overdose",
+          "Accidental ingestion of household chemicals",
+          "Questions about drug interactions"
+        ],
+        "available": "24/7"
+      },
+      "nurse_hotline": {
+        "number": "1-800-NURSES",
+        "when_to_call": [
+          "Health questions and advice",
+          "Non-emergency medical guidance",
+          "Medication questions",
+          "When unsure if emergency care is needed"
+        ],
+        "available": "24/7",
+        "note": "Staffed by registered nurses"
+      }
+    },
+    "emergency_situations": {
+      "severe_allergic_reaction": {
+        "signs": [
+          "Difficulty breathing",
+          "Swelling of face, lips, tongue, or throat",
+          "Rapid pulse",
+          "Dizziness or fainting",
+          "Severe whole-body reaction",
+          "Nausea and vomiting"
+        ],
+        "immediate_action": [
+          "Call 911 immediately",
+          "Use epinephrine auto-injector (EpiPen) if available",
+          "Have person lie down with legs elevated",
+          "Loosen tight clothing",
+          "Cover with blanket",
+          "Don't give anything to drink",
+          "Be prepared to perform CPR"
+        ],
+        "after_epipen": "Always go to emergency room even if symptoms improve"
+      },
+      "choking": {
+        "signs": [
+          "Cannot speak or breathe",
+          "Weak, ineffective coughing",
+          "High-pitched sounds while breathing",
+          "Hands clutched to throat",
+          "Blue color around lips or fingernails"
+        ],
+        "for_adults": [
+          "Stand behind person and wrap arms around waist",
+          "Make a fist and place above navel, below ribcage",
+          "Grasp fist with other hand and thrust upward and inward",
+          "Repeat until object is expelled or person becomes unconscious",
+          "If unconscious, begin CPR"
+        ],
+        "for_infants": [
+          "Hold baby face down on your forearm",
+          "Give 5 back blows between shoulder blades",
+          "Turn baby face up and give 5 chest thrusts",
+          "Repeat until object is expelled",
+          "Call 911 if unsuccessful"
+        ]
+      },
+      "heart_attack": {
+        "signs": [
+          "Chest pain or discomfort",
+          "Pain in arms, back, neck, jaw, or stomach",
+          "Shortness of breath",
+          "Nausea or vomiting",
+          "Cold sweat",
+          "Lightheadedness"
+        ],
+        "immediate_action": [
+          "Call 911 immediately",
+          "Have person sit down and rest",
+          "If conscious, give aspirin (unless allergic)",
+          "Loosen tight clothing",
+          "Be prepared to perform CPR",
+          "Don't leave person alone"
+        ]
+      },
+      "stroke": {
+        "signs_fast": {
+          "face": "Face drooping - smile appears uneven",
+          "arms": "Arm weakness - can't raise both arms",
+          "speech": "Speech difficulty - slurred or strange words",
+          "time": "Time to call 911 immediately"
+        },
+        "immediate_action": [
+          "Call 911 immediately",
+          "Note time symptoms started",
+          "Keep person calm and lying down",
+          "Don't give food or water",
+          "Monitor breathing and consciousness"
+        ]
+      }
+    },
+    "medication_emergencies": {
+      "overdose": {
+        "signs": [
+          "Confusion or altered mental state",
+          "Difficulty breathing",
+          "Slow or rapid heartbeat",
+          "Excessive drowsiness",
+          "Vomiting",
+          "Seizures"
+        ],
+        "immediate_action": [
+          "Call 911 or Poison Control: 1-800-222-1222",
+          "Try to identify what was taken and how much",
+          "Don't induce vomiting unless told to by poison control",
+          "Keep person awake and sitting up if conscious",
+          "Be prepared to perform CPR"
+        ]
+      },
+      "severe_side_effects": {
+        "when_to_seek_immediate_help": [
+          "Severe allergic reaction",
+          "Difficulty breathing",
+          "Severe dizziness or fainting",
+          "Irregular heartbeat",
+          "Severe abdominal pain",
+          "Signs of severe dehydration",
+          "Confusion or altered mental state"
+        ]
+      }
+    }
+  }
+}

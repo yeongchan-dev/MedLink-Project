@@ -1,0 +1,1097 @@
+{
+  "conditions": [
+    {
+      "id": "cond_flu",
+      "label_en": "Influenza (Flu)",
+      "label_ko": "독감",
+      "category": "INFECTIOUS",
+      "symptom_weights": [
+        {"symptom_id": "sx_high_fever", "weight": 5},
+        {"symptom_id": "sx_chills", "weight": 4},
+        {"symptom_id": "sx_muscle_aches", "weight": 4},
+        {"symptom_id": "sx_cough", "weight": 3},
+        {"symptom_id": "sx_sore_throat", "weight": 2},
+        {"symptom_id": "sx_runny_nose", "weight": 2},
+        {"symptom_id": "sx_headache", "weight": 3}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_breathing_trouble",
+          "if_symptoms_any": ["sx_shortness_breath"],
+          "recommendation": "ER / urgent evaluation"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "self_or_urgent_care",
+        "where_to_go_us": ["pharmacy", "urgent_care", "primary_care"],
+        "notes_en": "Antivirals work best within 48 hours of symptom onset (doctor/urgent care)."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Fever/pain",
+          "active_ingredients": ["acetaminophen", "ibuprofen"],
+          "example_brands": ["Tylenol", "Advil", "Motrin"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Do not exceed daily limits", "Take with food for ibuprofen"]
+        },
+        {
+          "goal": "Cough",
+          "active_ingredients": ["dextromethorphan"],
+          "example_brands": ["Delsym", "Robitussin DM"],
+          "dosage": "15-30mg every 4 hours",
+          "warnings": ["May cause drowsiness", "Avoid alcohol"]
+        }
+      ],
+      "prescription_options": [
+        {
+          "name": "Oseltamivir (Tamiflu)",
+          "indication": "Within 48 hours of symptom onset",
+          "note": "Reduces duration by 1-2 days"
+        }
+      ]
+    },
+    {
+      "id": "cond_covid",
+      "label_en": "COVID-19",
+      "label_ko": "코로나19",
+      "category": "INFECTIOUS",
+      "symptom_weights": [
+        {"symptom_id": "sx_fever", "weight": 4},
+        {"symptom_id": "sx_cough", "weight": 4},
+        {"symptom_id": "sx_shortness_breath", "weight": 5},
+        {"symptom_id": "sx_fatigue", "weight": 3},
+        {"symptom_id": "sx_muscle_aches", "weight": 3},
+        {"symptom_id": "sx_headache", "weight": 2},
+        {"symptom_id": "sx_loss_taste_smell", "weight": 5},
+        {"symptom_id": "sx_sore_throat", "weight": 2},
+        {"symptom_id": "sx_congestion", "weight": 2},
+        {"symptom_id": "sx_nausea", "weight": 1}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_severe_breathing",
+          "if_symptoms_any": ["sx_shortness_breath", "sx_chest_pain"],
+          "recommendation": "ER immediately"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "isolation_and_monitoring",
+        "where_to_go_us": ["telehealth", "urgent_care", "ER_if_severe"],
+        "notes_en": "Isolate immediately. Monitor symptoms. Antibiotics are not effective."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Fever/pain",
+          "active_ingredients": ["acetaminophen", "ibuprofen"],
+          "example_brands": ["Tylenol", "Advil"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Stay hydrated", "Rest"]
+        }
+      ]
+    },
+    {
+      "id": "cond_common_cold",
+      "label_en": "Common Cold",
+      "label_ko": "감기",
+      "category": "INFECTIOUS",
+      "symptom_weights": [
+        {"symptom_id": "sx_scratchy_throat", "weight": 4},
+        {"symptom_id": "sx_congestion", "weight": 4},
+        {"symptom_id": "sx_runny_nose", "weight": 4},
+        {"symptom_id": "sx_sneezing", "weight": 3},
+        {"symptom_id": "sx_coughing", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care",
+        "where_to_go_us": ["pharmacy", "self_care"],
+        "notes_en": "Rest, hydration, over-the-counter medications"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Pain relief",
+          "active_ingredients": ["acetaminophen", "ibuprofen"],
+          "example_brands": ["Tylenol", "Advil"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        },
+        {
+          "goal": "Congestion",
+          "active_ingredients": ["pseudoephedrine", "phenylephrine"],
+          "example_brands": ["Sudafed", "Sudafed PE"],
+          "dosage": "Follow package instructions",
+          "warnings": ["May increase blood pressure"]
+        }
+      ]
+    },
+    {
+      "id": "cond_norovirus",
+      "label_en": "Norovirus",
+      "label_ko": "노로바이러스",
+      "category": "INFECTIOUS",
+      "symptom_weights": [
+        {"symptom_id": "sx_violent_vomiting", "weight": 5},
+        {"symptom_id": "sx_diarrhea", "weight": 5},
+        {"symptom_id": "sx_nausea", "weight": 4},
+        {"symptom_id": "sx_abdominal_cramps", "weight": 3}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_dehydration",
+          "if_symptoms_any": ["sx_dizziness", "sx_confusion"],
+          "recommendation": "Urgent care for IV fluids"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "self_care_with_isolation",
+        "where_to_go_us": ["self_care", "urgent_care_if_dehydrated"],
+        "notes_en": "Isolate for 72 hours after symptoms stop. Prevent dehydration."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Prevent dehydration",
+          "active_ingredients": ["oral rehydration salts"],
+          "example_brands": ["Pedialyte", "electrolyte drinks"],
+          "dosage": "Frequent small sips",
+          "warnings": ["Avoid caffeine and alcohol"]
+        },
+        {
+          "goal": "Diarrhea",
+          "active_ingredients": ["loperamide"],
+          "example_brands": ["Imodium"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Consult doctor first", "Not if bloody diarrhea"]
+        },
+        {
+          "goal": "Pain relief",
+          "active_ingredients": ["acetaminophen"],
+          "example_brands": ["Tylenol"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "cond_sinusitis",
+      "label_en": "Sinusitis",
+      "label_ko": "부비동염",
+      "category": "INFECTIOUS",
+      "symptom_weights": [
+        {"symptom_id": "sx_thick_nasal_discharge", "weight": 5},
+        {"symptom_id": "sx_facial_pain", "weight": 4},
+        {"symptom_id": "sx_congestion", "weight": 4},
+        {"symptom_id": "sx_headache", "weight": 3},
+        {"symptom_id": "sx_postnasal_drip", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care_or_primary",
+        "where_to_go_us": ["pharmacy", "primary_care"],
+        "notes_en": "Rest, hydration, nasal irrigation"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Pain relief",
+          "active_ingredients": ["ibuprofen", "acetaminophen"],
+          "example_brands": ["Advil", "Tylenol"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        },
+        {
+          "goal": "Nasal congestion",
+          "active_ingredients": ["oxymetazoline", "phenylephrine"],
+          "example_brands": ["Afrin", "Neo-Synephrine"],
+          "dosage": "2-3 sprays per nostril",
+          "warnings": ["Do not use more than 3 days"]
+        },
+        {
+          "goal": "Nasal irrigation",
+          "active_ingredients": ["saline"],
+          "example_brands": ["NeilMed", "saline rinse kits"],
+          "dosage": "As directed",
+          "warnings": ["Use distilled or sterile water only"]
+        }
+      ]
+    },
+    {
+      "id": "cond_indigestion",
+      "label_en": "Indigestion",
+      "label_ko": "소화불량",
+      "category": "GI",
+      "symptom_weights": [
+        {"symptom_id": "sx_upper_abdominal_discomfort", "weight": 4},
+        {"symptom_id": "sx_upper_abdominal_pain", "weight": 3},
+        {"symptom_id": "sx_burning_sensation", "weight": 3},
+        {"symptom_id": "sx_bloating", "weight": 3},
+        {"symptom_id": "sx_burping", "weight": 2},
+        {"symptom_id": "sx_early_fullness", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care",
+        "where_to_go_us": ["pharmacy"],
+        "notes_en": "Try herbal aids first, then OTC medications"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Neutralize acid",
+          "active_ingredients": ["calcium carbonate", "magnesium hydroxide"],
+          "example_brands": ["Tums", "Rolaids"],
+          "dosage": "2-4 tablets as needed",
+          "warnings": ["Do not exceed daily limit"]
+        },
+        {
+          "goal": "Reduce acid production",
+          "active_ingredients": ["famotidine", "cimetidine"],
+          "example_brands": ["Pepcid AC", "Tagamet HB"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        },
+        {
+          "goal": "Gas relief",
+          "active_ingredients": ["simethicone"],
+          "example_brands": ["Mylanta", "Gas-X"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        }
+      ],
+      "herbal_aids": ["ginger tea", "chamomile tea", "peppermint oil"]
+    },
+    {
+      "id": "cond_gastritis",
+      "label_en": "Gastritis",
+      "label_ko": "위염",
+      "category": "GI",
+      "symptom_weights": [
+        {"symptom_id": "sx_upper_abdominal_burning", "weight": 5},
+        {"symptom_id": "sx_nausea", "weight": 4},
+        {"symptom_id": "sx_vomiting", "weight": 3},
+        {"symptom_id": "sx_feeling_fullness", "weight": 3},
+        {"symptom_id": "sx_indigestion", "weight": 3}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_severe_pain",
+          "if_symptoms_any": ["sx_chest_pain"],
+          "recommendation": "Rule out cardiac causes"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "primary_care",
+        "where_to_go_us": ["primary_care", "urgent_care"],
+        "notes_en": "May need prescription medications for H. pylori"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Reduce acid production",
+          "active_ingredients": ["omeprazole", "esomeprazole", "lansoprazole"],
+          "example_brands": ["Prilosec", "Nexium", "Prevacid"],
+          "dosage": "One daily, empty stomach",
+          "warnings": ["Take before meals"]
+        },
+        {
+          "goal": "Block acid",
+          "active_ingredients": ["famotidine", "cimetidine"],
+          "example_brands": ["Pepcid AC", "Tagamet HB"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        },
+        {
+          "goal": "Neutralize acid",
+          "active_ingredients": ["magnesium hydroxide", "aluminum hydroxide"],
+          "example_brands": ["Maalox", "Mylanta"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "id": "cond_constipation",
+      "label_en": "Constipation",
+      "label_ko": "변비",
+      "category": "GI",
+      "symptom_weights": [
+        {"symptom_id": "sx_fewer_bowel_movements", "weight": 5},
+        {"symptom_id": "sx_hard_stools", "weight": 4},
+        {"symptom_id": "sx_straining_pain", "weight": 4},
+        {"symptom_id": "sx_bloating", "weight": 3},
+        {"symptom_id": "sx_abdominal_cramps", "weight": 3},
+        {"symptom_id": "sx_incomplete_emptying", "weight": 4}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care",
+        "where_to_go_us": ["pharmacy"],
+        "notes_en": "Increase fiber and fluids first, then medications"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Bulk-forming",
+          "active_ingredients": ["psyllium husk", "methylcellulose"],
+          "example_brands": ["Metamucil", "Citrucel"],
+          "dosage": "Follow package instructions with plenty of water",
+          "warnings": ["Must take with adequate water"]
+        },
+        {
+          "goal": "Stool softeners",
+          "active_ingredients": ["docusate sodium"],
+          "example_brands": ["Colace", "Stool Softener"],
+          "dosage": "100-300mg daily",
+          "warnings": []
+        },
+        {
+          "goal": "Osmotic laxatives",
+          "active_ingredients": ["polyethylene glycol", "lactulose"],
+          "example_brands": ["MiraLAX", "Lactulose"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        },
+        {
+          "goal": "Stimulant laxatives",
+          "active_ingredients": ["bisacodyl", "senna"],
+          "example_brands": ["Dulcolax", "Senokot"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Short-term use only"]
+        }
+      ],
+      "lifestyle": ["increase fiber", "increase fluids", "exercise regularly"]
+    },
+    {
+      "id": "cond_gerd",
+      "label_en": "GERD (Gastroesophageal Reflux Disease)",
+      "label_ko": "위식도역류질환",
+      "category": "GI",
+      "symptom_weights": [
+        {"symptom_id": "sx_chest_burning", "weight": 5},
+        {"symptom_id": "sx_food_backwash", "weight": 4},
+        {"symptom_id": "sx_chest_pain", "weight": 3},
+        {"symptom_id": "sx_trouble_swallowing", "weight": 3},
+        {"symptom_id": "sx_lump_throat", "weight": 3},
+        {"symptom_id": "sx_ongoing_cough", "weight": 2},
+        {"symptom_id": "sx_laryngitis", "weight": 2},
+        {"symptom_id": "sx_worsening_asthma", "weight": 2}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_cardiac_chest_pain",
+          "if_symptoms_any": ["sx_chest_pain"],
+          "recommendation": "Rule out cardiac causes first"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "self_care_or_primary",
+        "where_to_go_us": ["pharmacy", "primary_care"],
+        "notes_en": "Lifestyle changes essential. May need prescription PPIs."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Neutralize acid",
+          "active_ingredients": ["calcium carbonate"],
+          "example_brands": ["Tums", "Rolaids"],
+          "dosage": "2-4 tablets as needed",
+          "warnings": []
+        },
+        {
+          "goal": "Reduce acid",
+          "active_ingredients": ["famotidine"],
+          "example_brands": ["Pepcid AC"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        },
+        {
+          "goal": "Block acid",
+          "active_ingredients": ["omeprazole", "esomeprazole"],
+          "example_brands": ["Prilosec", "Nexium"],
+          "dosage": "One daily on empty stomach",
+          "warnings": ["Take before meals"]
+        }
+      ],
+      "lifestyle": ["eat high-fiber foods", "avoid eating 3hr before bed", "elevate head with pillows", "sleep on left side"]
+    },
+    {
+      "id": "cond_allergic_reaction",
+      "label_en": "Allergic Reaction",
+      "label_ko": "알레르기반응",
+      "category": "ALLERGY",
+      "symptom_weights": [
+        {"symptom_id": "sx_hives", "weight": 4},
+        {"symptom_id": "sx_itchy_eyes", "weight": 3},
+        {"symptom_id": "sx_congestion", "weight": 2},
+        {"symptom_id": "sx_anaphylaxis", "weight": 5},
+        {"symptom_id": "sx_throat_tightening", "weight": 5},
+        {"symptom_id": "sx_wheezing", "weight": 4},
+        {"symptom_id": "sx_blood_pressure_drop", "weight": 5}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_anaphylaxis",
+          "if_symptoms_any": ["sx_anaphylaxis", "sx_throat_tightening", "sx_blood_pressure_drop"],
+          "recommendation": "EMERGENCY - Use EpiPen and call 911"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "depends_on_severity",
+        "where_to_go_us": ["pharmacy_mild", "urgent_care_moderate", "ER_severe"],
+        "notes_en": "Mild reactions: OTC antihistamines. Severe: Emergency treatment."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Antihistamines",
+          "active_ingredients": ["cetirizine", "loratadine", "diphenhydramine"],
+          "example_brands": ["Zyrtec", "Allegra", "Benadryl"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Benadryl may cause drowsiness"]
+        },
+        {
+          "goal": "Nasal symptoms",
+          "active_ingredients": ["fluticasone"],
+          "example_brands": ["Flonase"],
+          "dosage": "1-2 sprays per nostril daily",
+          "warnings": []
+        },
+        {
+          "goal": "Skin relief",
+          "active_ingredients": ["hydrocortisone"],
+          "example_brands": ["Cortaid"],
+          "dosage": "Apply thin layer 2-3 times daily",
+          "warnings": ["Do not use on face"]
+        }
+      ],
+      "emergency": {
+        "medication": "EpiPen",
+        "when": "Life-threatening symptoms",
+        "follow_up": "Always go to ER after EpiPen use"
+      }
+    },
+    {
+      "id": "cond_contact_dermatitis",
+      "label_en": "Contact Dermatitis",
+      "label_ko": "접촉성피부염",
+      "category": "ALLERGY",
+      "symptom_weights": [
+        {"symptom_id": "sx_itchy_rash", "weight": 5},
+        {"symptom_id": "sx_red_rash", "weight": 4},
+        {"symptom_id": "sx_dry_cracked_skin", "weight": 3},
+        {"symptom_id": "sx_blisters", "weight": 3},
+        {"symptom_id": "sx_burning_skin", "weight": 3},
+        {"symptom_id": "sx_swelling", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care",
+        "where_to_go_us": ["pharmacy"],
+        "notes_en": "Avoid triggering substances. Cool compresses help."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Reduce inflammation",
+          "active_ingredients": ["hydrocortisone"],
+          "example_brands": ["Cortaid", "Cortizone-10"],
+          "dosage": "Apply thin layer 2-4 times daily",
+          "warnings": ["Do not use on face for extended periods"]
+        },
+        {
+          "goal": "Itch relief",
+          "active_ingredients": ["diphenhydramine", "loratadine"],
+          "example_brands": ["Benadryl", "Claritin"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Benadryl may cause drowsiness"]
+        },
+        {
+          "goal": "Soothe skin",
+          "active_ingredients": ["calamine"],
+          "example_brands": ["Calamine Lotion"],
+          "dosage": "Apply as needed",
+          "warnings": []
+        }
+      ],
+      "skin_care": ["wash with mild soap", "cool baths with oatmeal", "fragrance-free moisturizers"]
+    },
+    {
+      "id": "cond_urticaria",
+      "label_en": "Urticaria (Hives)",
+      "label_ko": "두드러기",
+      "category": "ALLERGY",
+      "symptom_weights": [
+        {"symptom_id": "sx_raised_welts", "weight": 5},
+        {"symptom_id": "sx_welts_blanch", "weight": 4},
+        {"symptom_id": "sx_intense_itching", "weight": 4}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_severe_urticaria",
+          "if_symptoms_any": ["sx_throat_tightening", "sx_shortness_breath"],
+          "recommendation": "Urgent care or ER"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "self_care",
+        "where_to_go_us": ["pharmacy"],
+        "notes_en": "Most cases resolve within 24 hours"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Immediate relief",
+          "active_ingredients": ["cetirizine", "loratadine"],
+          "example_brands": ["Zyrtec", "Claritin"],
+          "dosage": "Follow package instructions",
+          "warnings": []
+        }
+      ],
+      "severe_treatment": {
+        "medication": "Oral steroids",
+        "when": "Severe cases",
+        "where": "Urgent care or primary care"
+      }
+    },
+    {
+      "id": "cond_eczema",
+      "label_en": "Eczema (Atopic Dermatitis)",
+      "label_ko": "아토피피부염",
+      "category": "ALLERGY",
+      "symptom_weights": [
+        {"symptom_id": "sx_dry_patches", "weight": 4},
+        {"symptom_id": "sx_intense_itching", "weight": 5},
+        {"symptom_id": "sx_redness", "weight": 3},
+        {"symptom_id": "sx_flaky_skin", "weight": 3},
+        {"symptom_id": "sx_thick_leathery_skin", "weight": 3},
+        {"symptom_id": "sx_weeping_crusting", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care_or_primary",
+        "where_to_go_us": ["pharmacy", "dermatology"],
+        "notes_en": "Chronic condition requiring ongoing management"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Immediate relief",
+          "active_ingredients": ["hydrocortisone", "triamcinolone"],
+          "example_brands": ["Cortaid", "topical steroids"],
+          "dosage": "Apply thin layer twice daily",
+          "warnings": ["Do not overuse steroids"]
+        }
+      ],
+      "prescription_options": [
+        {
+          "name": "Topical tacrolimus",
+          "indication": "Moderate cases",
+          "note": "Non-steroid option"
+        },
+        {
+          "name": "Dupilumab",
+          "indication": "Severe cases",
+          "note": "Injectable biologic"
+        }
+      ]
+    },
+    {
+      "id": "cond_insomnia",
+      "label_en": "Insomnia",
+      "label_ko": "불면증",
+      "category": "SLEEP",
+      "symptom_weights": [
+        {"symptom_id": "sx_trouble_falling_asleep", "weight": 4},
+        {"symptom_id": "sx_frequent_waking", "weight": 4},
+        {"symptom_id": "sx_early_waking", "weight": 3},
+        {"symptom_id": "sx_not_refreshed", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care_or_primary",
+        "where_to_go_us": ["sleep_hygiene", "primary_care"],
+        "notes_en": "Try sleep hygiene first, then medications"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Sleep aid",
+          "active_ingredients": ["melatonin"],
+          "example_brands": ["Melatonin supplements"],
+          "dosage": "0.5-3mg, 1-2 hours before bed",
+          "warnings": ["Start with lowest dose"]
+        },
+        {
+          "goal": "Temporary sleep aid",
+          "active_ingredients": ["diphenhydramine"],
+          "example_brands": ["ZzzQuil", "Unisom"],
+          "dosage": "Follow package instructions",
+          "warnings": ["May cause next-day drowsiness"]
+        }
+      ],
+      "prescription_options": [
+        {
+          "name": "Zolpidem (Ambien)",
+          "indication": "Short-term use",
+          "note": "Prescription required"
+        },
+        {
+          "name": "Eszopiclone (Lunesta)",
+          "indication": "Longer-term use",
+          "note": "Prescription required"
+        },
+        {
+          "name": "Trazodone",
+          "indication": "Off-label use",
+          "note": "Antidepressant with sedating effects"
+        }
+      ]
+    },
+    {
+      "id": "cond_migraine",
+      "label_en": "Migraine",
+      "label_ko": "편두통",
+      "category": "NEURO",
+      "symptom_weights": [
+        {"symptom_id": "sx_throbbing_headache", "weight": 5},
+        {"symptom_id": "sx_one_sided_headache", "weight": 4},
+        {"symptom_id": "sx_nausea", "weight": 3},
+        {"symptom_id": "sx_vomiting", "weight": 2},
+        {"symptom_id": "sx_light_sensitivity", "weight": 4},
+        {"symptom_id": "sx_sound_sensitivity", "weight": 4},
+        {"symptom_id": "sx_smell_sensitivity", "weight": 3}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_severe_headache",
+          "if_symptoms_any": ["sx_confusion", "sx_fever"],
+          "recommendation": "ER evaluation"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "self_care_or_primary",
+        "where_to_go_us": ["pharmacy", "neurology"],
+        "notes_en": "Early treatment more effective. May need prescription medications."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Acute treatment",
+          "active_ingredients": ["ibuprofen", "naproxen", "acetaminophen"],
+          "example_brands": ["Advil", "Aleve", "Tylenol"],
+          "dosage": "Higher doses often needed",
+          "warnings": ["Take early in attack"]
+        }
+      ],
+      "prescription_options": [
+        {
+          "name": "Triptans (sumatriptan)",
+          "indication": "Acute treatment",
+          "note": "Most effective migraine-specific treatment"
+        },
+        {
+          "name": "Antiemetics (metoclopramide)",
+          "indication": "Nausea/vomiting",
+          "note": "Often given with pain medication"
+        },
+        {
+          "name": "IV ketorolac",
+          "indication": "Severe cases",
+          "note": "ER treatment"
+        },
+        {
+          "name": "Beta-blockers",
+          "indication": "Prevention",
+          "note": "For frequent migraines"
+        },
+        {
+          "name": "CGRP inhibitors",
+          "indication": "Prevention",
+          "note": "Newer preventive option"
+        }
+      ]
+    },
+    {
+      "id": "cond_diabetes",
+      "label_en": "Diabetes",
+      "label_ko": "당뇨병",
+      "category": "METABOLIC",
+      "symptom_weights": [
+        {"symptom_id": "sx_thirsty", "weight": 4},
+        {"symptom_id": "sx_frequent_urination", "weight": 4},
+        {"symptom_id": "sx_weight_loss", "weight": 3},
+        {"symptom_id": "sx_ketones_urine", "weight": 4},
+        {"symptom_id": "sx_tired_weak", "weight": 3},
+        {"symptom_id": "sx_irritable", "weight": 2},
+        {"symptom_id": "sx_blurry_vision", "weight": 3},
+        {"symptom_id": "sx_slow_healing", "weight": 3},
+        {"symptom_id": "sx_frequent_infections", "weight": 3}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_dka",
+          "if_symptoms_any": ["sx_ketones_urine", "sx_confusion"],
+          "recommendation": "ER immediately - possible DKA"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "primary_care_urgent",
+        "where_to_go_us": ["primary_care", "endocrinology", "ER_if_DKA"],
+        "notes_en": "Requires immediate medical evaluation and ongoing management"
+      },
+      "otc_options_us": [],
+      "prescription_options": [
+        {
+          "name": "Insulin",
+          "indication": "Type 1 diabetes",
+          "note": "Essential for survival"
+        },
+        {
+          "name": "Metformin",
+          "indication": "Type 2 diabetes first-line",
+          "note": "Most common initial treatment"
+        },
+        {
+          "name": "GLP-1 agonists (semaglutide)",
+          "indication": "Type 2 diabetes",
+          "note": "Injectable medication"
+        },
+        {
+          "name": "SGLT2 inhibitors",
+          "indication": "Type 2 diabetes",
+          "note": "Empagliflozin, others"
+        }
+      ],
+      "emergency_treatment": {
+        "DKA": "IV insulin, IV fluids, electrolyte correction",
+        "location": "Hospital ER"
+      }
+    },
+    {
+      "id": "cond_high_blood_pressure",
+      "label_en": "High Blood Pressure (Hypertension)",
+      "label_ko": "고혈압",
+      "category": "METABOLIC",
+      "symptom_weights": [
+        {"symptom_id": "sx_headache", "weight": 2},
+        {"symptom_id": "sx_shortness_breath", "weight": 3},
+        {"symptom_id": "sx_nosebleeds", "weight": 2},
+        {"symptom_id": "sx_dizziness", "weight": 2},
+        {"symptom_id": "sx_vision_changes", "weight": 3},
+        {"symptom_id": "sx_chest_pain", "weight": 4},
+        {"symptom_id": "sx_confusion", "weight": 4}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_hypertensive_crisis",
+          "if_symptoms_any": ["sx_chest_pain", "sx_confusion", "sx_vision_changes"],
+          "recommendation": "ER immediately - possible hypertensive crisis"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "primary_care",
+        "where_to_go_us": ["primary_care", "cardiology"],
+        "notes_en": "Often no symptoms. Regular monitoring essential."
+      },
+      "otc_options_us": [],
+      "prescription_options": [
+        {
+          "name": "ACE inhibitors (lisinopril)",
+          "indication": "First-line treatment",
+          "note": "Protect kidneys and heart"
+        },
+        {
+          "name": "ARBs (losartan)",
+          "indication": "Alternative to ACE inhibitors",
+          "note": "Similar benefits"
+        },
+        {
+          "name": "Thiazide diuretics (HCTZ)",
+          "indication": "First-line treatment",
+          "note": "Water pills"
+        },
+        {
+          "name": "Calcium channel blockers (amlodipine)",
+          "indication": "Additional treatment",
+          "note": "Especially for elderly"
+        }
+      ]
+    },
+    {
+      "id": "cond_hypoglycemia",
+      "label_en": "Hypoglycemia",
+      "label_ko": "저혈당",
+      "category": "METABOLIC",
+      "symptom_weights": [
+        {"symptom_id": "sx_looking_pale", "weight": 3},
+        {"symptom_id": "sx_shakiness", "weight": 4},
+        {"symptom_id": "sx_sweating", "weight": 3},
+        {"symptom_id": "sx_headache", "weight": 2},
+        {"symptom_id": "sx_hunger", "weight": 3},
+        {"symptom_id": "sx_fast_heartbeat", "weight": 3},
+        {"symptom_id": "sx_fatigue", "weight": 2},
+        {"symptom_id": "sx_anxiety", "weight": 3},
+        {"symptom_id": "sx_difficulty_concentrating", "weight": 3},
+        {"symptom_id": "sx_dizziness", "weight": 3},
+        {"symptom_id": "sx_lightheadedness", "weight": 3},
+        {"symptom_id": "sx_tingling", "weight": 2},
+        {"symptom_id": "sx_confusion", "weight": 4},
+        {"symptom_id": "sx_loss_coordination", "weight": 4},
+        {"symptom_id": "sx_slurred_speech", "weight": 4},
+        {"symptom_id": "sx_blurry_vision", "weight": 3},
+        {"symptom_id": "sx_tunnel_vision", "weight": 3},
+        {"symptom_id": "sx_nightmares", "weight": 2},
+        {"symptom_id": "sx_unresponsiveness", "weight": 5},
+        {"symptom_id": "sx_seizures", "weight": 5}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_severe_hypoglycemia",
+          "if_symptoms_any": ["sx_unresponsiveness", "sx_seizures"],
+          "recommendation": "EMERGENCY - Glucagon injection, call 911"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "immediate_treatment",
+        "where_to_go_us": ["self_treatment_if_conscious", "ER_if_severe"],
+        "notes_en": "Treat immediately with glucose if conscious"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Immediate treatment",
+          "active_ingredients": ["glucose tablets", "fruit juice"],
+          "example_brands": ["Glucose tablets", "orange juice"],
+          "dosage": "15-20g glucose, repeat in 15 minutes if needed",
+          "warnings": ["Only if conscious and able to swallow"]
+        }
+      ],
+      "emergency_treatment": {
+        "conscious": "15-20g glucose (juice, glucose tablets)",
+        "unconscious": "Glucagon injection, IV D50 (50% dextrose)",
+        "location": "Self-care if conscious, ER if unconscious"
+      }
+    },
+    {
+      "id": "cond_muscle_inflammation",
+      "label_en": "Muscle Inflammation",
+      "label_ko": "근육염",
+      "category": "MSK",
+      "symptom_weights": [
+        {"symptom_id": "sx_muscle_weakness", "weight": 4},
+        {"symptom_id": "sx_muscle_pain", "weight": 4},
+        {"symptom_id": "sx_stiffness", "weight": 3},
+        {"symptom_id": "sx_fatigue", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care_or_primary",
+        "where_to_go_us": ["pharmacy", "primary_care"],
+        "notes_en": "Rest and anti-inflammatory medications"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Reduce inflammation",
+          "active_ingredients": ["ibuprofen", "naproxen"],
+          "example_brands": ["Advil", "Aleve"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Take with food"]
+        }
+      ]
+    },
+    {
+      "id": "cond_back_pain",
+      "label_en": "Back Pain",
+      "label_ko": "요통",
+      "category": "MSK",
+      "symptom_weights": [
+        {"symptom_id": "sx_back_pain", "weight": 5},
+        {"symptom_id": "sx_shooting_pain", "weight": 3},
+        {"symptom_id": "sx_radiating_pain", "weight": 3},
+        {"symptom_id": "sx_stiffness", "weight": 3},
+        {"symptom_id": "sx_muscle_spasms", "weight": 3},
+        {"symptom_id": "sx_decreased_mobility", "weight": 3}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_cauda_equina",
+          "if_symptoms_any": ["sx_loss_coordination"],
+          "recommendation": "ER evaluation for neurologic emergency"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "self_care",
+        "where_to_go_us": ["pharmacy", "physical_therapy"],
+        "notes_en": "Most back pain resolves with conservative treatment"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Pain relief",
+          "active_ingredients": ["ibuprofen", "naproxen"],
+          "example_brands": ["Advil", "Aleve"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Take with food"]
+        }
+      ]
+    },
+    {
+      "id": "cond_joint_inflammation",
+      "label_en": "Joint Inflammation (Arthritis)",
+      "label_ko": "관절염",
+      "category": "MSK",
+      "symptom_weights": [
+        {"symptom_id": "sx_joint_pain", "weight": 4},
+        {"symptom_id": "sx_joint_stiffness", "weight": 4},
+        {"symptom_id": "sx_joint_swelling", "weight": 4},
+        {"symptom_id": "sx_joint_warmth", "weight": 3},
+        {"symptom_id": "sx_reduced_range_motion", "weight": 3}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "self_care_or_primary",
+        "where_to_go_us": ["pharmacy", "rheumatology"],
+        "notes_en": "Chronic condition requiring ongoing management"
+      },
+      "otc_options_us": [
+        {
+          "goal": "Reduce inflammation",
+          "active_ingredients": ["ibuprofen", "naproxen", "diclofenac"],
+          "example_brands": ["Advil", "Aleve", "Voltaren Gel"],
+          "dosage": "Follow package instructions",
+          "warnings": ["Take with food for oral medications"]
+        }
+      ],
+      "prescription_options": [
+        {
+          "name": "Oral corticosteroids",
+          "indication": "Severe flares",
+          "note": "Short-term use"
+        },
+        {
+          "name": "Intra-articular corticosteroids",
+          "indication": "Localized inflammation",
+          "note": "Joint injections"
+        },
+        {
+          "name": "DMARDs (methotrexate)",
+          "indication": "Chronic inflammatory arthritis",
+          "note": "Long-term disease modification"
+        }
+      ]
+    },
+    {
+      "id": "cond_food_poisoning",
+      "label_en": "Food Poisoning",
+      "label_ko": "식중독",
+      "category": "SPECIFIC",
+      "symptom_weights": [
+        {"symptom_id": "sx_nausea", "weight": 4},
+        {"symptom_id": "sx_vomiting", "weight": 4},
+        {"symptom_id": "sx_diarrhea", "weight": 4},
+        {"symptom_id": "sx_bloody_diarrhea", "weight": 3},
+        {"symptom_id": "sx_stomach_cramps", "weight": 4},
+        {"symptom_id": "sx_fever", "weight": 3}
+      ],
+      "exclusion_red_flags": [
+        {
+          "rule_id": "rf_severe_dehydration",
+          "if_symptoms_any": ["sx_dizziness", "sx_confusion"],
+          "recommendation": "Urgent care for IV fluids"
+        }
+      ],
+      "care_pathway": {
+        "default_level": "self_care",
+        "where_to_go_us": ["self_care", "urgent_care_if_severe"],
+        "notes_en": "Oral rehydration most important. Monitor for dehydration."
+      },
+      "otc_options_us": [
+        {
+          "goal": "Rehydration",
+          "active_ingredients": ["oral rehydration salts"],
+          "example_brands": ["Pedialyte", "electrolyte solutions"],
+          "dosage": "Frequent small sips",
+          "warnings": []
+        },
+        {
+          "goal": "Nausea/vomiting",
+          "active_ingredients": [],
+          "example_brands": [],
+          "dosage": "",
+          "warnings": ["Prescription ondansetron (Zofran) more effective"]
+        },
+        {
+          "goal": "Diarrhea",
+          "active_ingredients": ["loperamide", "bismuth subsalicylate"],
+          "example_brands": ["Imodium", "Pepto-Bismol"],
+          "dosage": "Follow package instructions",
+          "warnings": ["NOT if bloody diarrhea or high fever"]
+        }
+      ],
+      "prescription_options": [
+        {
+          "name": "Ondansetron (Zofran)",
+          "indication": "Severe nausea/vomiting",
+          "note": "Very effective antiemetic"
+        },
+        {
+          "name": "Antibiotics",
+          "indication": "Suspected bacterial cause",
+          "note": "Azithromycin, ciprofloxacin depending on organism"
+        }
+      ],
+      "severe_treatment": {
+        "indication": "Severe cases",
+        "treatment": "Hospitalization, IV fluids",
+        "location": "Hospital"
+      }
+    },
+    {
+      "id": "cond_orthostatic_hypotension",
+      "label_en": "Orthostatic Hypotension",
+      "label_ko": "기립성저혈압",
+      "category": "SPECIFIC",
+      "symptom_weights": [
+        {"symptom_id": "sx_sudden_dizziness", "weight": 5},
+        {"symptom_id": "sx_sudden_lightheadedness", "weight": 5},
+        {"symptom_id": "sx_blurry_vision", "weight": 3},
+        {"symptom_id": "sx_weakness", "weight": 3},
+        {"symptom_id": "sx_fainting", "weight": 4}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "immediate_management",
+        "where_to_go_us": ["self_care_positioning", "primary_care"],
+        "notes_en": "Sit or lie down immediately when symptoms occur"
+      },
+      "otc_options_us": [],
+      "immediate_treatment": [
+        "Sit or lie down immediately",
+        "Elevate legs",
+        "Hydrate",
+        "Move slowly when changing positions"
+      ]
+    },
+    {
+      "id": "cond_vasovagal_syncope",
+      "label_en": "Vasovagal Syncope",
+      "label_ko": "미주신경실신",
+      "category": "SPECIFIC",
+      "symptom_weights": [
+        {"symptom_id": "sx_sudden_dizziness", "weight": 4},
+        {"symptom_id": "sx_sudden_lightheadedness", "weight": 4},
+        {"symptom_id": "sx_nausea", "weight": 3},
+        {"symptom_id": "sx_pale_skin", "weight": 3},
+        {"symptom_id": "sx_cold_sweat", "weight": 3},
+        {"symptom_id": "sx_tunnel_vision_faint", "weight": 4}
+      ],
+      "exclusion_red_flags": [],
+      "care_pathway": {
+        "default_level": "immediate_positioning",
+        "where_to_go_us": ["self_care", "primary_care_follow_up"],
+        "notes_en": "Lie down immediately to prevent injury from falling"
+      },
+      "otc_options_us": [],
+      "immediate_treatment": [
+        "Lie down immediately",
+        "Elevate your legs",
+        "If you can't sit down → sit and put head between knees",
+        "Loosen tight clothing",
+        "Cool down"
+      ],
+      "after_fainting": [
+        "Stay lying down for several minutes",
+        "Sit up slowly",
+        "Stand gradually",
+        "Drink water",
+        "Avoid driving immediately afterward"
+      ]
+    }
+  ]
+}
