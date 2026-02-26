@@ -6,7 +6,14 @@ MedLink is an iOS mobile application designed for Korean international students 
 
 ## 📱 App Preview
 
-*(Insert application screenshots here)*
+<p align="center">
+  <img src="assets/screenshots/splash.png" width="250" />
+  <img src="assets/screenshots/home.png" width="250" />
+  <img src="assets/screenshots/symptoms.png" width="250" />
+   <img src="assets/screenshots/korean.png" width="250" />
+  <img src="assets/screenshots/symptom_detail.png" width="250" />
+  <img src="assets/screenshots/korean_detail.png" width="250" />
+</p>
 
 ---
 
